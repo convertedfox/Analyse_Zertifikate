@@ -207,16 +207,6 @@ def render_app() -> None:
     if st.session_state.get(PAIR_SELECT_KEY) != selected_pair:
         st.session_state[PAIR_SELECT_KEY] = selected_pair
 
-    st.subheader("Top-20-Paare")
-    st.selectbox(
-        "Paar auswählen",
-        options=select_options,
-        key=PAIR_SELECT_KEY,
-        format_func=lambda pair: pair_label(pair, score_lookup),
-        on_change=update_pair_from_selectbox,
-    )
-    selected_pair = cast(tuple[str, str], st.session_state[SELECTED_PAIR_KEY])
-
     modules_per_certificate = {
         name: len(merged_modules(certificates[name], selected_type_filter)) for name in matrix_names
     }
@@ -279,6 +269,15 @@ def render_app() -> None:
                 hide_index=True,
                 height=320,
             )
+
+    st.subheader("Top-20-Paare")
+    st.selectbox(
+        "Paar auswählen",
+        options=select_options,
+        key=PAIR_SELECT_KEY,
+        format_func=lambda pair: pair_label(pair, score_lookup),
+        on_change=update_pair_from_selectbox,
+    )
 
 
 render_app()
