@@ -1,0 +1,31 @@
+[theme]
+base = "light"
+primaryColor = "#793521"
+backgroundColor = "#f8f7f4"
+secondaryBackgroundColor = "#efeae1"
+textColor = "#2e2a26"
+linkColor = "#793521"
+borderColor = "#d6cec2"
+showWidgetBorder = true
+showSidebarBorder = true
+baseRadius = "small"
+buttonRadius = "small"
+font = "'IBM Plex Sans':https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+headingFont = "'Space Grotesk':https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap"
+codeFont = "'IBM Plex Mono':https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
+baseFontSize = 14
+baseFontWeight = 400
+headingFontSizes = ["30px", "24px", "20px", "17px", "15px", "13px"]
+headingFontWeights = [700, 600, 600, 600, 500, 500]
+linkUnderline = false
+chartCategoricalColors = ["#793521", "#5c4f44", "#a3593b", "#8f7565", "#ba896e", "#68564a"]
+chartSequentialColors = ["#f8f7f4", "#efeae1", "#e3d6c6", "#d5c0aa", "#c7a487", "#b88767", "#a86f4d", "#955a3a", "#84482e", "#793521"]
+dataframeBorderColor = "#d6cec2"
+dataframeHeaderBackgroundColor = "#efeae1"
+
+[theme.sidebar]
+backgroundColor = "#f2eee7"
+secondaryBackgroundColor = "#e7dfd4"
+codeBackgroundColor = "#ece4d8"
+textColor = "#2e2a26"
+borderColor = "#d6cec2"

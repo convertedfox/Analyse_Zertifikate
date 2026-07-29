@@ -1,0 +1,3883 @@
+{
+  "source": {
+    "excel_path": "data/Analyse der Zertifikate.xlsx",
+    "sheet_main": "Zertifikate und deren Module",
+    "sheet_selected": "Einzelne Zertifikate"
+  },
+  "selected_certificate_names": [
+    "Elektromobilität",
+    "Künstliche Intelligenz",
+    "Machine Learning",
+    "Maschinelles Lernen",
+    "Data Science & Künstliche Intelligenz",
+    "Employer Branding, Recruiting und Talentmanagement",
+    "Digital HRM",
+    "Leadership - erfolgreich als Führungskraft",
+    "Organisationspsychologie – Basis für ein erfolgreiches Miteinander!",
+    "Essentials of Entrepreneurship",
+    "Entrepreneurship",
+    "Artificial Intelligence for Digital Markets",
+    "Digital Platforms - Concepts and Methods",
+    "Information Systems for Digital Markets",
+    "Technologies for AI",
+    "Natural Language Processing",
+    "Research in Artificial Intelligence",
+    "Accounting",
+    "Controlling",
+    "Taxation",
+    "Accounting-Controlling-Taxation",
+    "Nachhaltiges Finance",
+    "Nachhaltige Unternehmensführung",
+    "Nachhaltige Gestaltung der Transformation",
+    "Angewandte Betriebswirtschaftslehre und Volkswirtschaftslehre",
+    "IT-Security",
+    "Automatisierungstechnik für Elektrotechniker",
+    "Automatisierungstechnik für Mechatroniker",
+    "Elektronik",
+    "Mechatronik",
+    "Digitalisierung",
+    "Kommunikationstechnik",
+    "Energietechnik",
+    "Nachhaltige Energietechnik",
+    "Embedded Systems and Software Engineering",
+    "Embedded Systems & Software Engineering",
+    "Kunststofftechnik",
+    "International Project Management",
+    "Automatisierung",
+    "Digitale Konstruktion und Entwicklung",
+    "Fahrzeugtechnik",
+    "KI für Ingenieurwissenschaften",
+    "Material Science",
+    "Nachhaltige Produktionstechnologien",
+    "Nachhaltiges Technologiemanagement",
+    "Materialwissenschaften",
+    "Produktionstechnik und Produktionsmanagement",
+    "Technologien für die Nachhaltigkeit",
+    "Professionalisierung des Einkaufs in Industrieunternehmen",
+    "Industrial Engineering",
+    "Industrial Engineering - Operations Management",
+    "Industrial Engineering - Executive Operations",
+    "Executive Engineering 1",
+    "Executive Engineering 2",
+    "Executive Engineering",
+    "Digital Production",
+    "Innovations- und Produktmanagement",
+    "Mechatronische Systeme",
+    "Smart Operations Management",
+    "Sustainability",
+    "Energieeffizienz und Nachhaltigkeit",
+    "Facility Management",
+    "Sales Management",
+    "Infrastrukturmanagement",
+    "Konstruktiver Ingenieurbau",
+    "BIM und Lean Construction Management",
+    "Knowledge and Information Management",
+    "Future Skills",
+    "Komplexe Datenanalyse",
+    "Nutzerzentriertes Design",
+    "Kollaboration",
+    "Digital Literacy",
+    "Durchhaltevermögen",
+    "Unternehmerisches Handeln und Eigeninitiative",
+    "Business Process Management",
+    "Data Science",
+    "Enterprise Information Systems",
+    "Information Security Management",
+    "IT-Consulting",
+    "Management Digitaler Infrastrukturen im Kontext Digitaler Transformation",
+    "Strategic IT-Management and Digital Leadership",
+    "Mensch-Maschine-Systeme",
+    "Data Science & Mensch-Maschine-Systeme",
+    "Softwareentwicklung",
+    "Advanced Software Engineering"
+  ],
+  "certificates": [
+    {
+      "certificate_name": "Elektromobilität",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10503",
+            "module_name": "Elektrische Antriebe"
+          },
+          {
+            "module_id": "T3M10509",
+            "module_name": "Elektromobilität"
+          },
+          {
+            "module_id": "T3M30319",
+            "module_name": "Werkstoffe in der Elektrotechnik"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M10503",
+            "module_name": "Elektrische Antriebe"
+          },
+          {
+            "module_id": "T3M10504",
+            "module_name": "Hybridantriebe"
+          },
+          {
+            "module_id": "T3M10505",
+            "module_name": "Advanced Driver Assistance Systems"
+          },
+          {
+            "module_id": "T3M10509",
+            "module_name": "Elektromobilität"
+          },
+          {
+            "module_id": "T3M10510",
+            "module_name": "Geschäftsmodelle Elektromobilität"
+          },
+          {
+            "module_id": "T3M10511",
+            "module_name": "Brennstoffzellenantriebe"
+          },
+          {
+            "module_id": "T3M30319",
+            "module_name": "Werkstoffe in der Elektrotechnik"
+          },
+          {
+            "module_id": "T3M40507",
+            "module_name": "Maschinelles Lernen und Computational Intelligence"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Künstliche Intelligenz",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M40204",
+            "module_name": "Semantic Web und Internet der Dinge"
+          },
+          {
+            "module_id": "T3M40501",
+            "module_name": "Intelligente Agenten und Multiagentensysteme"
+          },
+          {
+            "module_id": "T3M40505",
+            "module_name": "Intelligente Interaktive Systeme"
+          },
+          {
+            "module_id": "T3M40604",
+            "module_name": "Intelligente Autonome Robotersysteme"
+          },
+          {
+            "module_id": "T3M40609",
+            "module_name": "Bildverarbeitung und Bildverstehen"
+          },
+          {
+            "module_id": "T3M40610",
+            "module_name": "Methoden der künstlichen Intelligenz und Computational Intelligence"
+          },
+          {
+            "module_id": "W3M50015",
+            "module_name": "Computerlinguistik und Sprachtechnologien"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M40203",
+            "module_name": "Advanced Data Mining und Web Mining"
+          },
+          {
+            "module_id": "T3M40204",
+            "module_name": "Semantic Web und Internet der Dinge"
+          },
+          {
+            "module_id": "T3M40501",
+            "module_name": "Intelligente Agenten und Multiagentensysteme"
+          },
+          {
+            "module_id": "T3M40505",
+            "module_name": "Intelligente Interaktive Systeme"
+          },
+          {
+            "module_id": "T3M40507",
+            "module_name": "Maschinelles Lernen und Computational Intelligence"
+          },
+          {
+            "module_id": "T3M40508",
+            "module_name": "Advanced Machine Learning and Deep Learning"
+          },
+          {
+            "module_id": "T3M40509",
+            "module_name": "Programming for Data Science"
+          },
+          {
+            "module_id": "T3M70303",
+            "module_name": "Grundlagen Web Engineering"
+          },
+          {
+            "module_id": "W3M20024",
+            "module_name": "Anwendungen der Künstlichen Intelligenz"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Machine Learning",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M40203",
+            "module_name": "Advanced Data Mining und Web Mining"
+          },
+          {
+            "module_id": "T3M40507",
+            "module_name": "Maschinelles Lernen und Computational Intelligence"
+          },
+          {
+            "module_id": "T3M40508",
+            "module_name": "Advanced Machine Learning and Deep Learning"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Maschinelles Lernen",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M40203",
+            "module_name": "Advanced Data Mining und Web Mining"
+          },
+          {
+            "module_id": "T3M40508",
+            "module_name": "Advanced Machine Learning and Deep Learning"
+          },
+          {
+            "module_id": "T3M40609",
+            "module_name": "Bildverarbeitung und Bildverstehen"
+          },
+          {
+            "module_id": "T3M40611",
+            "module_name": "Maschinelles Lernen"
+          },
+          {
+            "module_id": "W3M50020",
+            "module_name": "Explainable AI"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Data Science & Künstliche Intelligenz",
+      "modules_by_type": {
+        "CAS": [],
+        "DAS": [
+          {
+            "module_id": "T3M40203",
+            "module_name": "Advanced Data Mining und Web Mining"
+          },
+          {
+            "module_id": "T3M40204",
+            "module_name": "Semantic Web und Internet der Dinge"
+          },
+          {
+            "module_id": "T3M40501",
+            "module_name": "Intelligente Agenten und Multiagentensysteme"
+          },
+          {
+            "module_id": "T3M40505",
+            "module_name": "Intelligente Interaktive Systeme"
+          },
+          {
+            "module_id": "T3M40508",
+            "module_name": "Advanced Machine Learning and Deep Learning"
+          },
+          {
+            "module_id": "T3M40509",
+            "module_name": "Programming for Data Science"
+          },
+          {
+            "module_id": "T3M40604",
+            "module_name": "Intelligente Autonome Robotersysteme"
+          },
+          {
+            "module_id": "T3M40609",
+            "module_name": "Bildverarbeitung und Bildverstehen"
+          },
+          {
+            "module_id": "T3M40610",
+            "module_name": "Methoden der künstlichen Intelligenz und Computational Intelligence"
+          },
+          {
+            "module_id": "T3M40611",
+            "module_name": "Maschinelles Lernen"
+          },
+          {
+            "module_id": "W3M10807",
+            "module_name": "Analytics for Data-driven business"
+          },
+          {
+            "module_id": "W3M20026",
+            "module_name": "Data Science – Processes and Algorithms"
+          },
+          {
+            "module_id": "W3M50015",
+            "module_name": "Computerlinguistik und Sprachtechnologien"
+          },
+          {
+            "module_id": "W3M50020",
+            "module_name": "Explainable AI"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Employer Branding, Recruiting und Talentmanagement",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "W3M10906",
+            "module_name": "Recruiting und Talentmanagement"
+          },
+          {
+            "module_id": "W3M10914",
+            "module_name": "Business Coaching und Mentoring"
+          },
+          {
+            "module_id": "W3M10924",
+            "module_name": "Employer Branding, Recruiting und Social Media Sourcing"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Digital HRM",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "W3M10909",
+            "module_name": "Digitale Transformation und Big Data in Organisationen"
+          },
+          {
+            "module_id": "W3M10911",
+            "module_name": "New Work: agiles Arbeiten und digitale Führung"
+          },
+          {
+            "module_id": "W3M10923",
+            "module_name": "HR Future Skills – Digitale Tools und Anwendungen für HR-Experts (PMW)"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Leadership - erfolgreich als Führungskraft",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "W3M10901",
+            "module_name": "Arbeitsrecht für Fach- und Führungskräfte"
+          },
+          {
+            "module_id": "W3M10911",
+            "module_name": "New Work: agiles Arbeiten und digitale Führung"
+          },
+          {
+            "module_id": "W3M10917",
+            "module_name": "Psychologie der Personalführung"
+          },
+          {
+            "module_id": "W3M10922",
+            "module_name": "Führung, Organisational Behaviour und Ethik"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Organisationspsychologie – Basis für ein erfolgreiches Miteinander!",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "W3M10903",
+            "module_name": "Organisationspsychologie und-soziologie"
+          },
+          {
+            "module_id": "W3M10910",
+            "module_name": "Politik und Emotionen in Organisationen"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Essentials of Entrepreneurship",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "W3M11401",
+            "module_name": "Finanzierung von Startups/ Scaleups und Investor Relations"
+          },
+          {
+            "module_id": "W3M11402",
+            "module_name": "Vertrieb und Wachstumsstrategie"
+          },
+          {
+            "module_id": "W3M11403",
+            "module_name": "Entrepreneurial Leadership"
+          },
+          {
+            "module_id": "W3M11404",
+            "module_name": "Innovation und Disruption"
+          },
+          {
+            "module_id": "W3M11405",
+            "module_name": "Organisationsdesign und Stakeholder Relations"
+          },
+          {
+            "module_id": "W3M11406",
+            "module_name": "Corporate Entrepreneurship und Intrapreneurship"
+          },
+          {
+            "module_id": "W3M11407",
+            "module_name": "Family Business"
+          },
+          {
+            "module_id": "W3M11408",
+            "module_name": "Social Entrepreneurship und CSR"
+          },
+          {
+            "module_id": "W3M11491",
+            "module_name": "Unternehmerische Haltung, Skills und Methoden"
+          },
+          {
+            "module_id": "W3M11492",
+            "module_name": "Unternehmerische Innovation, Kreation und Wachstum"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Entrepreneurship",
+      "modules_by_type": {
+        "CAS": [],
+        "DAS": [
+          {
+            "module_id": "W3M11401",
+            "module_name": "Finanzierung von Startups/ Scaleups und Investor Relations"
+          },
+          {
+            "module_id": "W3M11402",
+            "module_name": "Vertrieb und Wachstumsstrategie"
+          },
+          {
+            "module_id": "W3M11403",
+            "module_name": "Entrepreneurial Leadership"
+          },
+          {
+            "module_id": "W3M11404",
+            "module_name": "Innovation und Disruption"
+          },
+          {
+            "module_id": "W3M11405",
+            "module_name": "Organisationsdesign und Stakeholder Relations"
+          },
+          {
+            "module_id": "W3M11406",
+            "module_name": "Corporate Entrepreneurship und Intrapreneurship"
+          },
+          {
+            "module_id": "W3M11407",
+            "module_name": "Family Business"
+          },
+          {
+            "module_id": "W3M11408",
+            "module_name": "Social Entrepreneurship und CSR"
+          },
+          {
+            "module_id": "W3M11491",
+            "module_name": "Unternehmerische Haltung, Skills und Methoden"
+          },
+          {
+            "module_id": "W3M11492",
+            "module_name": "Unternehmerische Innovation, Kreation und Wachstum"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Artificial Intelligence for Digital Markets",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "W3M10810",
+            "module_name": "Applied UX-Methods"
+          },
+          {
+            "module_id": "W3M10909",
+            "module_name": "Digitale Transformation und Big Data in Organisationen"
+          },
+          {
+            "module_id": "W3M20024",
+            "module_name": "Anwendungen der Künstlichen Intelligenz"
+          },
+          {
+            "module_id": "W3M20028",
+            "module_name": "Technologien zur maschinellen Verarbeitung natürlicher Sprache"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Digital Platforms - Concepts and Methods",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "W3M10803",
+            "module_name": "Strategy and Business Modelling"
+          },
+          {
+            "module_id": "W3M10807",
+            "module_name": "Analytics for Data-driven business"
+          },
+          {
+            "module_id": "W3M20024",
+            "module_name": "Anwendungen der Künstlichen Intelligenz"
+          },
+          {
+            "module_id": "W3M20025",
+            "module_name": "Business Data Science"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Information Systems for Digital Markets",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "W3M10810",
+            "module_name": "Applied UX-Methods"
+          },
+          {
+            "module_id": "W3M10813",
+            "module_name": "Information Systems for Data-driven Business"
+          },
+          {
+            "module_id": "W3M20027",
+            "module_name": "Big Data Engineering"
+          },
+          {
+            "module_id": "W3M20035",
+            "module_name": "Cloud Infrastructures and Cloud Native Applications"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Technologies for AI",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "W3M50011",
+            "module_name": "Zeitreihenanalyse"
+          },
+          {
+            "module_id": "W3M50012",
+            "module_name": "Reinforcement Learning"
+          },
+          {
+            "module_id": "W3M50014",
+            "module_name": "Wissensrepräsentation und Wissensgraphen"
+          },
+          {
+            "module_id": "W3M50015",
+            "module_name": "Computerlinguistik und Sprachtechnologien"
+          },
+          {
+            "module_id": "W3M50016",
+            "module_name": "Large Language Models"
+          },
+          {
+            "module_id": "W3M50020",
+            "module_name": "Explainable AI"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Natural Language Processing",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "W3M50015",
+            "module_name": "Computerlinguistik und Sprachtechnologien"
+          },
+          {
+            "module_id": "W3M50016",
+            "module_name": "Large Language Models"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Research in Artificial Intelligence",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M40501",
+            "module_name": "Intelligente Agenten und Multiagentensysteme"
+          },
+          {
+            "module_id": "T3M40505",
+            "module_name": "Intelligente Interaktive Systeme"
+          },
+          {
+            "module_id": "T3M40508",
+            "module_name": "Advanced Machine Learning and Deep Learning"
+          },
+          {
+            "module_id": "T3M40604",
+            "module_name": "Intelligente Autonome Robotersysteme"
+          },
+          {
+            "module_id": "T3M40609",
+            "module_name": "Bildverarbeitung und Bildverstehen"
+          },
+          {
+            "module_id": "W3M50008",
+            "module_name": "Research and Publication"
+          },
+          {
+            "module_id": "W3M50012",
+            "module_name": "Reinforcement Learning"
+          },
+          {
+            "module_id": "W3M50013",
+            "module_name": "Vertiefung Data Engineering und Data Analytics"
+          },
+          {
+            "module_id": "W3M50014",
+            "module_name": "Wissensrepräsentation und Wissensgraphen"
+          },
+          {
+            "module_id": "W3M50015",
+            "module_name": "Computerlinguistik und Sprachtechnologien"
+          },
+          {
+            "module_id": "W3M50016",
+            "module_name": "Large Language Models"
+          },
+          {
+            "module_id": "W3M50019",
+            "module_name": "Causal Inference Learning"
+          },
+          {
+            "module_id": "W3M50020",
+            "module_name": "Explainable AI"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Accounting",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "W3M10101",
+            "module_name": "Jahresabschluss nach IFRS und HGB im Vergleich"
+          },
+          {
+            "module_id": "W3M10107",
+            "module_name": "Konzernrechnungslegung nach IFRS und HGB"
+          },
+          {
+            "module_id": "W3M10119",
+            "module_name": "Rechnungswesen 4.0: Nutzung der Informationstechnologie im Internen und Externen Rechnungswesen"
+          },
+          {
+            "module_id": "W3M10121",
+            "module_name": "Finanzberichterstattung"
+          },
+          {
+            "module_id": "W3M10122",
+            "module_name": "Interne Kontrollsysteme und Interne Revision als Instrumente der Unternehmensführung"
+          },
+          {
+            "module_id": "W3M10126",
+            "module_name": "Nachhaltigkeit: Management - Controlling - Reporting"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Controlling",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "W3M10102",
+            "module_name": "Wertorientiertes Management und Controlling"
+          },
+          {
+            "module_id": "W3M10112",
+            "module_name": "Strategisches und operatives Controlling"
+          },
+          {
+            "module_id": "W3M10116",
+            "module_name": "Führungsorientierte Kosten- und Leistungsrechnung"
+          },
+          {
+            "module_id": "W3M10119",
+            "module_name": "Rechnungswesen 4.0: Nutzung der Informationstechnologie im Internen und Externen Rechnungswesen"
+          },
+          {
+            "module_id": "W3M10120",
+            "module_name": "Mergers & Acquisitions, Beteiligungsmanagement"
+          },
+          {
+            "module_id": "W3M10123",
+            "module_name": "Ausgewählte Themen des branchen-spezifischen und des funktionsorientierten Controllings"
+          },
+          {
+            "module_id": "W3M10124",
+            "module_name": "Business Planning und Business Analytics"
+          },
+          {
+            "module_id": "W3M10126",
+            "module_name": "Nachhaltigkeit: Management - Controlling - Reporting"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Taxation",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "W3M10117",
+            "module_name": "Umsatzsteuer und Verkehrsteuer"
+          },
+          {
+            "module_id": "W3M10118",
+            "module_name": "Ertragsteuern und Steuerbilanz"
+          },
+          {
+            "module_id": "W3M10125",
+            "module_name": "Betriebswirtschaftliche Steuerlehre"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Accounting-Controlling-Taxation",
+      "modules_by_type": {
+        "CAS": [],
+        "DAS": [
+          {
+            "module_id": "W3M10101",
+            "module_name": "Jahresabschluss nach IFRS und HGB im Vergleich"
+          },
+          {
+            "module_id": "W3M10102",
+            "module_name": "Wertorientiertes Management und Controlling"
+          },
+          {
+            "module_id": "W3M10107",
+            "module_name": "Konzernrechnungslegung nach IFRS und HGB"
+          },
+          {
+            "module_id": "W3M10112",
+            "module_name": "Strategisches und operatives Controlling"
+          },
+          {
+            "module_id": "W3M10116",
+            "module_name": "Führungsorientierte Kosten- und Leistungsrechnung"
+          },
+          {
+            "module_id": "W3M10117",
+            "module_name": "Umsatzsteuer und Verkehrsteuer"
+          },
+          {
+            "module_id": "W3M10118",
+            "module_name": "Ertragsteuern und Steuerbilanz"
+          },
+          {
+            "module_id": "W3M10119",
+            "module_name": "Rechnungswesen 4.0: Nutzung der Informationstechnologie im Internen und Externen Rechnungswesen"
+          },
+          {
+            "module_id": "W3M10120",
+            "module_name": "Mergers & Acquisitions, Beteiligungsmanagement"
+          },
+          {
+            "module_id": "W3M10121",
+            "module_name": "Finanzberichterstattung"
+          },
+          {
+            "module_id": "W3M10122",
+            "module_name": "Interne Kontrollsysteme und Interne Revision als Instrumente der Unternehmensführung"
+          },
+          {
+            "module_id": "W3M10123",
+            "module_name": "Ausgewählte Themen des branchen-spezifischen und des funktionsorientierten Controllings"
+          },
+          {
+            "module_id": "W3M10124",
+            "module_name": "Business Planning und Business Analytics"
+          },
+          {
+            "module_id": "W3M10125",
+            "module_name": "Betriebswirtschaftliche Steuerlehre"
+          },
+          {
+            "module_id": "W3M10126",
+            "module_name": "Nachhaltigkeit: Management - Controlling - Reporting"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Nachhaltiges Finance",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "W3M10121",
+            "module_name": "Finanzberichterstattung"
+          },
+          {
+            "module_id": "W3M10405",
+            "module_name": "Asset und Wealth Management"
+          },
+          {
+            "module_id": "W3M10411",
+            "module_name": "Bepreisung und Steuerung von Kreditrisiken in der nachhaltigen sowie digitalen Transformation"
+          },
+          {
+            "module_id": "W3M10920",
+            "module_name": "Nachhaltigkeitsmanagement: Unternehmensethik und Corporate Social Responsibility"
+          },
+          {
+            "module_id": "XZ101",
+            "module_name": "Grundzüge des Nachhaltigkeits-Paradigmas"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Nachhaltige Unternehmensführung",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "SMPKS_13.1",
+            "module_name": "Intersektorale Zusammenarbeit"
+          },
+          {
+            "module_id": "T3M30219",
+            "module_name": "Nachhaltigkeit und strategische Unternehmensführung"
+          },
+          {
+            "module_id": "W3M10126",
+            "module_name": "Nachhaltigkeit: Management - Controlling - Reporting"
+          },
+          {
+            "module_id": "W3M10920",
+            "module_name": "Nachhaltigkeitsmanagement: Unternehmensethik und Corporate Social Responsibility"
+          },
+          {
+            "module_id": "W3M11408",
+            "module_name": "Social Entrepreneurship und CSR"
+          },
+          {
+            "module_id": "XZ101",
+            "module_name": "Grundzüge des Nachhaltigkeits-Paradigmas"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Nachhaltige Gestaltung der Transformation",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M30708",
+            "module_name": "Sustainable Engineering and Business"
+          },
+          {
+            "module_id": "W3M10411",
+            "module_name": "Bepreisung und Steuerung von Kreditrisiken in der nachhaltigen sowie digitalen Transformation"
+          },
+          {
+            "module_id": "W3M10920",
+            "module_name": "Nachhaltigkeitsmanagement: Unternehmensethik und Corporate Social Responsibility"
+          },
+          {
+            "module_id": "XZ101",
+            "module_name": "Grundzüge des Nachhaltigkeits-Paradigmas"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Angewandte Betriebswirtschaftslehre und Volkswirtschaftslehre",
+      "modules_by_type": {
+        "CAS": [],
+        "DAS": [
+          {
+            "module_id": "W3M30151",
+            "module_name": "BWL/VWL_I: Kosten- und Leistungsrechnung, Controlling"
+          },
+          {
+            "module_id": "W3M30152",
+            "module_name": "BWL/VWL_II: Investition und Finanzierung, Unternehmensführung, Organisation und Corporate Governance"
+          },
+          {
+            "module_id": "W3M30153",
+            "module_name": "BWL/VWL_III: Volkswirtschaftslehre"
+          },
+          {
+            "module_id": "W3M30154",
+            "module_name": "BWL/VWL_IV: Unternehmensbewertung / Wirtschaftsprüfung"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "IT-Security",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M40304",
+            "module_name": "IT-Sicherheit"
+          },
+          {
+            "module_id": "T3M40305",
+            "module_name": "Angewandte Kryptographie"
+          },
+          {
+            "module_id": "T3M40306",
+            "module_name": "Labor IT-Sicherheit"
+          },
+          {
+            "module_id": "W3M20014",
+            "module_name": "IT-Security Cryptography and Secure Communications"
+          },
+          {
+            "module_id": "W3M20015",
+            "module_name": "Information Security Management"
+          },
+          {
+            "module_id": "W3M20016",
+            "module_name": "IT-Security Secure Software Engineering in Business Computing"
+          },
+          {
+            "module_id": "W3M20017",
+            "module_name": "IT-Security Attack and Defense"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Automatisierungstechnik für Elektrotechniker",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M20201",
+            "module_name": "Grundlagen des Maschinenbaus"
+          },
+          {
+            "module_id": "T3M20202",
+            "module_name": "Hydraulik und Pneumatik"
+          },
+          {
+            "module_id": "T3M20305",
+            "module_name": "Modellierung von Anlagen und Systemen"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M20201",
+            "module_name": "Grundlagen des Maschinenbaus"
+          },
+          {
+            "module_id": "T3M20202",
+            "module_name": "Hydraulik und Pneumatik"
+          },
+          {
+            "module_id": "T3M20205",
+            "module_name": "Elektrische Antriebe und Aktorik"
+          },
+          {
+            "module_id": "T3M20302",
+            "module_name": "Vertiefung Regelungstechnik"
+          },
+          {
+            "module_id": "T3M20305",
+            "module_name": "Modellierung von Anlagen und Systemen"
+          },
+          {
+            "module_id": "T3M20306",
+            "module_name": "Prozessleitsysteme"
+          },
+          {
+            "module_id": "T3M20402",
+            "module_name": "Numerik, Simulation und künstliche Intelligenz"
+          },
+          {
+            "module_id": "T3M30306",
+            "module_name": "Robotik"
+          },
+          {
+            "module_id": "T3M30701",
+            "module_name": "Prozessorientiertes Qualitätsmanagement"
+          },
+          {
+            "module_id": "T3MX0201",
+            "module_name": "Studienarbeit"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Automatisierungstechnik für Mechatroniker",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M20203",
+            "module_name": "Elektrotechnik Grundlagen und Mathematik"
+          },
+          {
+            "module_id": "T3M20204",
+            "module_name": "Elektronik und Messtechnik"
+          },
+          {
+            "module_id": "T3M20305",
+            "module_name": "Modellierung von Anlagen und Systemen"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M20203",
+            "module_name": "Elektrotechnik Grundlagen und Mathematik"
+          },
+          {
+            "module_id": "T3M20204",
+            "module_name": "Elektronik und Messtechnik"
+          },
+          {
+            "module_id": "T3M20205",
+            "module_name": "Elektrische Antriebe und Aktorik"
+          },
+          {
+            "module_id": "T3M20302",
+            "module_name": "Vertiefung Regelungstechnik"
+          },
+          {
+            "module_id": "T3M20305",
+            "module_name": "Modellierung von Anlagen und Systemen"
+          },
+          {
+            "module_id": "T3M20306",
+            "module_name": "Prozessleitsysteme"
+          },
+          {
+            "module_id": "T3M30306",
+            "module_name": "Robotik"
+          },
+          {
+            "module_id": "T3M30701",
+            "module_name": "Prozessorientiertes Qualitätsmanagement"
+          },
+          {
+            "module_id": "T3MX0201",
+            "module_name": "Studienarbeit"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Elektronik",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10505",
+            "module_name": "Advanced Driver Assistance Systems"
+          },
+          {
+            "module_id": "T3M10506",
+            "module_name": "Embedded Systems im Kraftfahrzeug"
+          },
+          {
+            "module_id": "T3M20403",
+            "module_name": "Physical Layer der Kommunikationstechnik: Optisch und drahtlos, Bauelemente und Verfahren"
+          },
+          {
+            "module_id": "T3M20504",
+            "module_name": "Anwendungen moderner Informations- und Kommunikationstechnologien"
+          },
+          {
+            "module_id": "T3M20703",
+            "module_name": "Leistungselektronik und Energiespeicher"
+          },
+          {
+            "module_id": "T3M20801",
+            "module_name": "FPGA und Hochgeschwindigkeits-PCB-Design"
+          },
+          {
+            "module_id": "T3M20802",
+            "module_name": "Mikroelektronik und Sensorik"
+          },
+          {
+            "module_id": "T3M30319",
+            "module_name": "Werkstoffe in der Elektrotechnik"
+          },
+          {
+            "module_id": "T3M40204",
+            "module_name": "Semantic Web und Internet der Dinge"
+          },
+          {
+            "module_id": "T3M40402",
+            "module_name": "Verteilte Systeme"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M10505",
+            "module_name": "Advanced Driver Assistance Systems"
+          },
+          {
+            "module_id": "T3M10506",
+            "module_name": "Embedded Systems im Kraftfahrzeug"
+          },
+          {
+            "module_id": "T3M20403",
+            "module_name": "Physical Layer der Kommunikationstechnik: Optisch und drahtlos, Bauelemente und Verfahren"
+          },
+          {
+            "module_id": "T3M20504",
+            "module_name": "Anwendungen moderner Informations- und Kommunikationstechnologien"
+          },
+          {
+            "module_id": "T3M20703",
+            "module_name": "Leistungselektronik und Energiespeicher"
+          },
+          {
+            "module_id": "T3M20801",
+            "module_name": "FPGA und Hochgeschwindigkeits-PCB-Design"
+          },
+          {
+            "module_id": "T3M20802",
+            "module_name": "Mikroelektronik und Sensorik"
+          },
+          {
+            "module_id": "T3M30319",
+            "module_name": "Werkstoffe in der Elektrotechnik"
+          },
+          {
+            "module_id": "T3M40204",
+            "module_name": "Semantic Web und Internet der Dinge"
+          },
+          {
+            "module_id": "T3M40402",
+            "module_name": "Verteilte Systeme"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Mechatronik",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M20101",
+            "module_name": "Mathematische Methoden der Elektrotechnik"
+          },
+          {
+            "module_id": "T3M20204",
+            "module_name": "Elektronik und Messtechnik"
+          },
+          {
+            "module_id": "T3M20305",
+            "module_name": "Modellierung von Anlagen und Systemen"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M10503",
+            "module_name": "Elektrische Antriebe"
+          },
+          {
+            "module_id": "T3M20101",
+            "module_name": "Mathematische Methoden der Elektrotechnik"
+          },
+          {
+            "module_id": "T3M20204",
+            "module_name": "Elektronik und Messtechnik"
+          },
+          {
+            "module_id": "T3M20302",
+            "module_name": "Vertiefung Regelungstechnik"
+          },
+          {
+            "module_id": "T3M20305",
+            "module_name": "Modellierung von Anlagen und Systemen"
+          },
+          {
+            "module_id": "T3M20306",
+            "module_name": "Prozessleitsysteme"
+          },
+          {
+            "module_id": "T3M30306",
+            "module_name": "Robotik"
+          },
+          {
+            "module_id": "T3M30702",
+            "module_name": "Qualitätsmanagement - Fortgeschrittene Methoden I"
+          },
+          {
+            "module_id": "T3MX0201",
+            "module_name": "Studienarbeit"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Digitalisierung",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M20403",
+            "module_name": "Physical Layer der Kommunikationstechnik: Optisch und drahtlos, Bauelemente und Verfahren"
+          },
+          {
+            "module_id": "T3M20504",
+            "module_name": "Anwendungen moderner Informations- und Kommunikationstechnologien"
+          },
+          {
+            "module_id": "T3M20801",
+            "module_name": "FPGA und Hochgeschwindigkeits-PCB-Design"
+          },
+          {
+            "module_id": "T3M30810",
+            "module_name": "Einführung und Anwendung emergenzbasierter KI-Algorithmen"
+          },
+          {
+            "module_id": "T3M40204",
+            "module_name": "Semantic Web und Internet der Dinge"
+          },
+          {
+            "module_id": "T3M40302",
+            "module_name": "Betrieb von Rechenzentren"
+          },
+          {
+            "module_id": "T3M40304",
+            "module_name": "IT-Sicherheit"
+          },
+          {
+            "module_id": "T3M40401",
+            "module_name": "Mobile Computing"
+          },
+          {
+            "module_id": "T3M40610",
+            "module_name": "Methoden der künstlichen Intelligenz und Computational Intelligence"
+          },
+          {
+            "module_id": "T3M40611",
+            "module_name": "Maschinelles Lernen"
+          },
+          {
+            "module_id": "T3M70302",
+            "module_name": "Grundlagen praktische Kommunikationstechnik"
+          },
+          {
+            "module_id": "T3M70304",
+            "module_name": "Grundlagen des Software Engineering"
+          },
+          {
+            "module_id": "T3M70305",
+            "module_name": "Grundlagen der Programmierung"
+          },
+          {
+            "module_id": "T3M70306",
+            "module_name": "Fortgeschrittene Konzepte der Programmierung"
+          },
+          {
+            "module_id": "W3M50020",
+            "module_name": "Explainable AI"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M20403",
+            "module_name": "Physical Layer der Kommunikationstechnik: Optisch und drahtlos, Bauelemente und Verfahren"
+          },
+          {
+            "module_id": "T3M20504",
+            "module_name": "Anwendungen moderner Informations- und Kommunikationstechnologien"
+          },
+          {
+            "module_id": "T3M20801",
+            "module_name": "FPGA und Hochgeschwindigkeits-PCB-Design"
+          },
+          {
+            "module_id": "T3M30810",
+            "module_name": "Einführung und Anwendung emergenzbasierter KI-Algorithmen"
+          },
+          {
+            "module_id": "T3M40204",
+            "module_name": "Semantic Web und Internet der Dinge"
+          },
+          {
+            "module_id": "T3M40302",
+            "module_name": "Betrieb von Rechenzentren"
+          },
+          {
+            "module_id": "T3M40304",
+            "module_name": "IT-Sicherheit"
+          },
+          {
+            "module_id": "T3M40401",
+            "module_name": "Mobile Computing"
+          },
+          {
+            "module_id": "T3M40610",
+            "module_name": "Methoden der künstlichen Intelligenz und Computational Intelligence"
+          },
+          {
+            "module_id": "T3M40611",
+            "module_name": "Maschinelles Lernen"
+          },
+          {
+            "module_id": "T3M70302",
+            "module_name": "Grundlagen praktische Kommunikationstechnik"
+          },
+          {
+            "module_id": "T3M70304",
+            "module_name": "Grundlagen des Software Engineering"
+          },
+          {
+            "module_id": "T3M70305",
+            "module_name": "Grundlagen der Programmierung"
+          },
+          {
+            "module_id": "T3M70306",
+            "module_name": "Fortgeschrittene Konzepte der Programmierung"
+          },
+          {
+            "module_id": "W3M50020",
+            "module_name": "Explainable AI"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Kommunikationstechnik",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M20403",
+            "module_name": "Physical Layer der Kommunikationstechnik: Optisch und drahtlos, Bauelemente und Verfahren"
+          },
+          {
+            "module_id": "T3M20504",
+            "module_name": "Anwendungen moderner Informations- und Kommunikationstechnologien"
+          },
+          {
+            "module_id": "T3M40304",
+            "module_name": "IT-Sicherheit"
+          },
+          {
+            "module_id": "T3M40401",
+            "module_name": "Mobile Computing"
+          },
+          {
+            "module_id": "T3M40402",
+            "module_name": "Verteilte Systeme"
+          },
+          {
+            "module_id": "T3M40404",
+            "module_name": "Kommunikationssysteme"
+          },
+          {
+            "module_id": "T3M70302",
+            "module_name": "Grundlagen praktische Kommunikationstechnik"
+          },
+          {
+            "module_id": "T3MX0201",
+            "module_name": "Studienarbeit"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M20503",
+            "module_name": "Drahtlose Kommunikationstechnik"
+          },
+          {
+            "module_id": "T3M20504",
+            "module_name": "Anwendungen moderner Informations- und Kommunikationstechnologien"
+          },
+          {
+            "module_id": "T3M40304",
+            "module_name": "IT-Sicherheit"
+          },
+          {
+            "module_id": "T3M40401",
+            "module_name": "Mobile Computing"
+          },
+          {
+            "module_id": "T3M40402",
+            "module_name": "Verteilte Systeme"
+          },
+          {
+            "module_id": "T3M40404",
+            "module_name": "Kommunikationssysteme"
+          },
+          {
+            "module_id": "T3M70302",
+            "module_name": "Grundlagen praktische Kommunikationstechnik"
+          },
+          {
+            "module_id": "T3MX0201",
+            "module_name": "Studienarbeit"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Energietechnik",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10103",
+            "module_name": "Angewandte Thermodynamik"
+          },
+          {
+            "module_id": "T3M10409",
+            "module_name": "Thermische Energietechnik & Regenerative Energien"
+          },
+          {
+            "module_id": "T3M20603",
+            "module_name": "Erneuerbare Energien"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M20305",
+            "module_name": "Modellierung von Anlagen und Systemen"
+          },
+          {
+            "module_id": "T3M20601",
+            "module_name": "Planung und Analyse elektrischer Energieversorgungsnetze, Teil 1"
+          },
+          {
+            "module_id": "T3M20602",
+            "module_name": "Energieinformationstechnik"
+          },
+          {
+            "module_id": "T3M20603",
+            "module_name": "Erneuerbare Energien"
+          },
+          {
+            "module_id": "T3M20703",
+            "module_name": "Leistungselektronik und Energiespeicher"
+          },
+          {
+            "module_id": "T3M30701",
+            "module_name": "Prozessorientiertes Qualitätsmanagement"
+          },
+          {
+            "module_id": "T3M30705",
+            "module_name": "Umweltmanagement in Unternehmen"
+          },
+          {
+            "module_id": "T3MX0201",
+            "module_name": "Studienarbeit"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Nachhaltige Energietechnik",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M20601",
+            "module_name": "Planung und Analyse elektrischer Energieversorgungsnetze, Teil 1"
+          },
+          {
+            "module_id": "T3M20602",
+            "module_name": "Energieinformationstechnik"
+          },
+          {
+            "module_id": "T3M20603",
+            "module_name": "Erneuerbare Energien"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M20305",
+            "module_name": "Modellierung von Anlagen und Systemen"
+          },
+          {
+            "module_id": "T3M20601",
+            "module_name": "Planung und Analyse elektrischer Energieversorgungsnetze, Teil 1"
+          },
+          {
+            "module_id": "T3M20602",
+            "module_name": "Energieinformationstechnik"
+          },
+          {
+            "module_id": "T3M20603",
+            "module_name": "Erneuerbare Energien"
+          },
+          {
+            "module_id": "T3M20703",
+            "module_name": "Leistungselektronik und Energiespeicher"
+          },
+          {
+            "module_id": "T3M30702",
+            "module_name": "Qualitätsmanagement - Fortgeschrittene Methoden I"
+          },
+          {
+            "module_id": "T3M40401",
+            "module_name": "Mobile Computing"
+          },
+          {
+            "module_id": "T3M40610",
+            "module_name": "Methoden der künstlichen Intelligenz und Computational Intelligence"
+          },
+          {
+            "module_id": "T3M40611",
+            "module_name": "Maschinelles Lernen"
+          },
+          {
+            "module_id": "T3M70304",
+            "module_name": "Grundlagen des Software Engineering"
+          },
+          {
+            "module_id": "T3MX0201",
+            "module_name": "Studienarbeit"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Embedded Systems and Software Engineering",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10506",
+            "module_name": "Embedded Systems im Kraftfahrzeug"
+          },
+          {
+            "module_id": "T3M30804",
+            "module_name": "Modellbildung, Analyse und Simulation technischer Systeme"
+          },
+          {
+            "module_id": "T3M40401",
+            "module_name": "Mobile Computing"
+          },
+          {
+            "module_id": "T3M40506",
+            "module_name": "Advanced Software Engineering"
+          },
+          {
+            "module_id": "T3M40509",
+            "module_name": "Programming for Data Science"
+          },
+          {
+            "module_id": "T3M70304",
+            "module_name": "Grundlagen des Software Engineering"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M10506",
+            "module_name": "Embedded Systems im Kraftfahrzeug"
+          },
+          {
+            "module_id": "T3M30804",
+            "module_name": "Modellbildung, Analyse und Simulation technischer Systeme"
+          },
+          {
+            "module_id": "T3M40401",
+            "module_name": "Mobile Computing"
+          },
+          {
+            "module_id": "T3M40506",
+            "module_name": "Advanced Software Engineering"
+          },
+          {
+            "module_id": "T3M40509",
+            "module_name": "Programming for Data Science"
+          },
+          {
+            "module_id": "T3M70304",
+            "module_name": "Grundlagen des Software Engineering"
+          },
+          {
+            "module_id": "T3MX0201",
+            "module_name": "Studienarbeit"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Embedded Systems & Software Engineering",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10506",
+            "module_name": "Embedded Systems im Kraftfahrzeug"
+          },
+          {
+            "module_id": "T3M40509",
+            "module_name": "Programming for Data Science"
+          },
+          {
+            "module_id": "T3M70304",
+            "module_name": "Grundlagen des Software Engineering"
+          },
+          {
+            "module_id": "T3M70305",
+            "module_name": "Grundlagen der Programmierung"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M10207",
+            "module_name": "Mechatronische Systeme in der Anwendung"
+          },
+          {
+            "module_id": "T3M10506",
+            "module_name": "Embedded Systems im Kraftfahrzeug"
+          },
+          {
+            "module_id": "T3M30804",
+            "module_name": "Modellbildung, Analyse und Simulation technischer Systeme"
+          },
+          {
+            "module_id": "T3M40304",
+            "module_name": "IT-Sicherheit"
+          },
+          {
+            "module_id": "T3M40509",
+            "module_name": "Programming for Data Science"
+          },
+          {
+            "module_id": "T3M70301",
+            "module_name": "Grundlagen Datenbanken"
+          },
+          {
+            "module_id": "T3M70304",
+            "module_name": "Grundlagen des Software Engineering"
+          },
+          {
+            "module_id": "T3M70305",
+            "module_name": "Grundlagen der Programmierung"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Kunststofftechnik",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10308",
+            "module_name": "Additive Fertigung"
+          },
+          {
+            "module_id": "T3M10309",
+            "module_name": "Verarbeitungsverfahren und Konstruktion in der Kunststofftechnik"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "International Project Management",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10510",
+            "module_name": "Geschäftsmodelle Elektromobilität"
+          },
+          {
+            "module_id": "T3M30211",
+            "module_name": "Intercultural Business"
+          },
+          {
+            "module_id": "T3M30220",
+            "module_name": "Project Management mit PRINCE2"
+          },
+          {
+            "module_id": "T3M30221",
+            "module_name": "Agiles Projektmanagement mit Scrum"
+          },
+          {
+            "module_id": "T3M40601",
+            "module_name": "International Project Management Intercultural Competence"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Automatisierung",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10302",
+            "module_name": "Automatisierungstechnik"
+          },
+          {
+            "module_id": "T3M30305",
+            "module_name": "Fabrik- und Layoutplanung"
+          },
+          {
+            "module_id": "T3M30306",
+            "module_name": "Robotik"
+          },
+          {
+            "module_id": "T3M30308",
+            "module_name": "Industrial Engineering I - Lean-Management & Produktionssysteme nach MTM"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M10207",
+            "module_name": "Mechatronische Systeme in der Anwendung"
+          },
+          {
+            "module_id": "T3M10302",
+            "module_name": "Automatisierungstechnik"
+          },
+          {
+            "module_id": "T3M10303",
+            "module_name": "Messtechnik und Prozessstabilisierung"
+          },
+          {
+            "module_id": "T3M30305",
+            "module_name": "Fabrik- und Layoutplanung"
+          },
+          {
+            "module_id": "T3M30306",
+            "module_name": "Robotik"
+          },
+          {
+            "module_id": "T3M30308",
+            "module_name": "Industrial Engineering I - Lean-Management & Produktionssysteme nach MTM"
+          },
+          {
+            "module_id": "T3M30804",
+            "module_name": "Modellbildung, Analyse und Simulation technischer Systeme"
+          },
+          {
+            "module_id": "T3M40604",
+            "module_name": "Intelligente Autonome Robotersysteme"
+          },
+          {
+            "module_id": "T3M40611",
+            "module_name": "Maschinelles Lernen"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Digitale Konstruktion und Entwicklung",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10201",
+            "module_name": "Methoden der Produktentwicklung"
+          },
+          {
+            "module_id": "T3M10210",
+            "module_name": "Strukturoptimierung mit Finite-Elemente-Methoden"
+          },
+          {
+            "module_id": "T3M10213",
+            "module_name": "Angewandte Konstruktion"
+          },
+          {
+            "module_id": "T3M30804",
+            "module_name": "Modellbildung, Analyse und Simulation technischer Systeme"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M10201",
+            "module_name": "Methoden der Produktentwicklung"
+          },
+          {
+            "module_id": "T3M10206",
+            "module_name": "Kunststoffe als Konstruktionswerkstoffe"
+          },
+          {
+            "module_id": "T3M10208",
+            "module_name": "Schwingungslehre und Vibrationserprobung"
+          },
+          {
+            "module_id": "T3M10209",
+            "module_name": "Innovative Leichtbaulösungen"
+          },
+          {
+            "module_id": "T3M10212",
+            "module_name": "Innovationssprünge mit Bionik"
+          },
+          {
+            "module_id": "T3M10411",
+            "module_name": "Tribologie"
+          },
+          {
+            "module_id": "T3M30804",
+            "module_name": "Modellbildung, Analyse und Simulation technischer Systeme"
+          },
+          {
+            "module_id": "T3M40610",
+            "module_name": "Methoden der künstlichen Intelligenz und Computational Intelligence"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Fahrzeugtechnik",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10210",
+            "module_name": "Strukturoptimierung mit Finite-Elemente-Methoden"
+          },
+          {
+            "module_id": "T3M10501",
+            "module_name": "Fahrzeuggesamtsystem"
+          },
+          {
+            "module_id": "T3M10505",
+            "module_name": "Advanced Driver Assistance Systems"
+          },
+          {
+            "module_id": "T3M10506",
+            "module_name": "Embedded Systems im Kraftfahrzeug"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "KI für Ingenieurwissenschaften",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10101",
+            "module_name": "Angewandte Ingenieurmathematik"
+          },
+          {
+            "module_id": "T3M30801",
+            "module_name": "Technische Statistik"
+          },
+          {
+            "module_id": "T3M40610",
+            "module_name": "Methoden der künstlichen Intelligenz und Computational Intelligence"
+          },
+          {
+            "module_id": "T3M40611",
+            "module_name": "Maschinelles Lernen"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Material Science",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10303",
+            "module_name": "Messtechnik und Prozessstabilisierung"
+          },
+          {
+            "module_id": "T3M10308",
+            "module_name": "Additive Fertigung"
+          },
+          {
+            "module_id": "T3M10411",
+            "module_name": "Tribologie"
+          },
+          {
+            "module_id": "T3M30318",
+            "module_name": "Hochleistungswerkstoffe"
+          },
+          {
+            "module_id": "T3M30319",
+            "module_name": "Werkstoffe in der Elektrotechnik"
+          },
+          {
+            "module_id": "XZ101",
+            "module_name": "Grundzüge des Nachhaltigkeits-Paradigmas"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Nachhaltige Produktionstechnologien",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10103",
+            "module_name": "Angewandte Thermodynamik"
+          },
+          {
+            "module_id": "T3M10104",
+            "module_name": "Product Lifecycle Management"
+          },
+          {
+            "module_id": "T3M10212",
+            "module_name": "Innovationssprünge mit Bionik"
+          },
+          {
+            "module_id": "T3M10409",
+            "module_name": "Thermische Energietechnik & Regenerative Energien"
+          },
+          {
+            "module_id": "T3M30318",
+            "module_name": "Hochleistungswerkstoffe"
+          },
+          {
+            "module_id": "T3M70307",
+            "module_name": "Technologies for Sustainable Management (TSM)"
+          },
+          {
+            "module_id": "XZ101",
+            "module_name": "Grundzüge des Nachhaltigkeits-Paradigmas"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M10103",
+            "module_name": "Angewandte Thermodynamik"
+          },
+          {
+            "module_id": "T3M10104",
+            "module_name": "Product Lifecycle Management"
+          },
+          {
+            "module_id": "T3M10212",
+            "module_name": "Innovationssprünge mit Bionik"
+          },
+          {
+            "module_id": "T3M10409",
+            "module_name": "Thermische Energietechnik & Regenerative Energien"
+          },
+          {
+            "module_id": "T3M30318",
+            "module_name": "Hochleistungswerkstoffe"
+          },
+          {
+            "module_id": "T3M70307",
+            "module_name": "Technologies for Sustainable Management (TSM)"
+          },
+          {
+            "module_id": "XZ101",
+            "module_name": "Grundzüge des Nachhaltigkeits-Paradigmas"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Nachhaltiges Technologiemanagement",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10104",
+            "module_name": "Product Lifecycle Management"
+          },
+          {
+            "module_id": "T3M30219",
+            "module_name": "Nachhaltigkeit und strategische Unternehmensführung"
+          },
+          {
+            "module_id": "T3M30704",
+            "module_name": "Technologiemanagement"
+          },
+          {
+            "module_id": "T3M30705",
+            "module_name": "Umweltmanagement in Unternehmen"
+          },
+          {
+            "module_id": "T3M30708",
+            "module_name": "Sustainable Engineering and Business"
+          },
+          {
+            "module_id": "T3M70307",
+            "module_name": "Technologies for Sustainable Management (TSM)"
+          },
+          {
+            "module_id": "W3M10126",
+            "module_name": "Nachhaltigkeit: Management - Controlling - Reporting"
+          },
+          {
+            "module_id": "XZ101",
+            "module_name": "Grundzüge des Nachhaltigkeits-Paradigmas"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M10104",
+            "module_name": "Product Lifecycle Management"
+          },
+          {
+            "module_id": "T3M30219",
+            "module_name": "Nachhaltigkeit und strategische Unternehmensführung"
+          },
+          {
+            "module_id": "T3M30704",
+            "module_name": "Technologiemanagement"
+          },
+          {
+            "module_id": "T3M30705",
+            "module_name": "Umweltmanagement in Unternehmen"
+          },
+          {
+            "module_id": "T3M30708",
+            "module_name": "Sustainable Engineering and Business"
+          },
+          {
+            "module_id": "T3M70307",
+            "module_name": "Technologies for Sustainable Management (TSM)"
+          },
+          {
+            "module_id": "W3M10126",
+            "module_name": "Nachhaltigkeit: Management - Controlling - Reporting"
+          },
+          {
+            "module_id": "XZ101",
+            "module_name": "Grundzüge des Nachhaltigkeits-Paradigmas"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Materialwissenschaften",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10102",
+            "module_name": "Höhere Festigkeitslehre und Werkstoffmechanik"
+          },
+          {
+            "module_id": "T3M10308",
+            "module_name": "Additive Fertigung"
+          },
+          {
+            "module_id": "T3M10309",
+            "module_name": "Verarbeitungsverfahren und Konstruktion in der Kunststofftechnik"
+          },
+          {
+            "module_id": "T3M30318",
+            "module_name": "Hochleistungswerkstoffe"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M10102",
+            "module_name": "Höhere Festigkeitslehre und Werkstoffmechanik"
+          },
+          {
+            "module_id": "T3M10308",
+            "module_name": "Additive Fertigung"
+          },
+          {
+            "module_id": "T3M10309",
+            "module_name": "Verarbeitungsverfahren und Konstruktion in der Kunststofftechnik"
+          },
+          {
+            "module_id": "T3M10411",
+            "module_name": "Tribologie"
+          },
+          {
+            "module_id": "T3M30318",
+            "module_name": "Hochleistungswerkstoffe"
+          },
+          {
+            "module_id": "T3M30319",
+            "module_name": "Werkstoffe in der Elektrotechnik"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Produktionstechnik und Produktionsmanagement",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10302",
+            "module_name": "Automatisierungstechnik"
+          },
+          {
+            "module_id": "T3M10304",
+            "module_name": "Produktionsmanagement"
+          },
+          {
+            "module_id": "T3M30305",
+            "module_name": "Fabrik- und Layoutplanung"
+          },
+          {
+            "module_id": "T3M30325",
+            "module_name": "Produktionslogistik und Supply Chain Management"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M10104",
+            "module_name": "Product Lifecycle Management"
+          },
+          {
+            "module_id": "T3M10303",
+            "module_name": "Messtechnik und Prozessstabilisierung"
+          },
+          {
+            "module_id": "T3M10304",
+            "module_name": "Produktionsmanagement"
+          },
+          {
+            "module_id": "T3M30305",
+            "module_name": "Fabrik- und Layoutplanung"
+          },
+          {
+            "module_id": "T3M30306",
+            "module_name": "Robotik"
+          },
+          {
+            "module_id": "T3M30308",
+            "module_name": "Industrial Engineering I - Lean-Management & Produktionssysteme nach MTM"
+          },
+          {
+            "module_id": "T3M30701",
+            "module_name": "Prozessorientiertes Qualitätsmanagement"
+          },
+          {
+            "module_id": "T3M30702",
+            "module_name": "Qualitätsmanagement - Fortgeschrittene Methoden I"
+          },
+          {
+            "module_id": "T3M30801",
+            "module_name": "Technische Statistik"
+          },
+          {
+            "module_id": "T3M30803",
+            "module_name": "Simulation in Produktion und Logistik"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Technologien für die Nachhaltigkeit",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10104",
+            "module_name": "Product Lifecycle Management"
+          },
+          {
+            "module_id": "T3M20603",
+            "module_name": "Erneuerbare Energien"
+          },
+          {
+            "module_id": "T3M30705",
+            "module_name": "Umweltmanagement in Unternehmen"
+          },
+          {
+            "module_id": "T3M70307",
+            "module_name": "Technologies for Sustainable Management (TSM)"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M10104",
+            "module_name": "Product Lifecycle Management"
+          },
+          {
+            "module_id": "T3M10210",
+            "module_name": "Strukturoptimierung mit Finite-Elemente-Methoden"
+          },
+          {
+            "module_id": "T3M10212",
+            "module_name": "Innovationssprünge mit Bionik"
+          },
+          {
+            "module_id": "T3M10411",
+            "module_name": "Tribologie"
+          },
+          {
+            "module_id": "T3M20603",
+            "module_name": "Erneuerbare Energien"
+          },
+          {
+            "module_id": "T3M30318",
+            "module_name": "Hochleistungswerkstoffe"
+          },
+          {
+            "module_id": "T3M30705",
+            "module_name": "Umweltmanagement in Unternehmen"
+          },
+          {
+            "module_id": "T3M70307",
+            "module_name": "Technologies for Sustainable Management (TSM)"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Professionalisierung des Einkaufs in Industrieunternehmen",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M30203",
+            "module_name": "Fach- und Führungsaufgaben im Einkauf"
+          },
+          {
+            "module_id": "T3M30707",
+            "module_name": "Cost Engineering I"
+          },
+          {
+            "module_id": "W3M10126",
+            "module_name": "Nachhaltigkeit: Management - Controlling - Reporting"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Industrial Engineering",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M30308",
+            "module_name": "Industrial Engineering I - Lean-Management & Produktionssysteme nach MTM"
+          },
+          {
+            "module_id": "T3M30322",
+            "module_name": "Industrial Engineering II – Human Factors and System-Ergonomics in Manufacturing"
+          },
+          {
+            "module_id": "T3M30323",
+            "module_name": "Operations Management und Industrial Engineering II"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M30207",
+            "module_name": "Personalführung und -management"
+          },
+          {
+            "module_id": "T3M30305",
+            "module_name": "Fabrik- und Layoutplanung"
+          },
+          {
+            "module_id": "T3M30308",
+            "module_name": "Industrial Engineering I - Lean-Management & Produktionssysteme nach MTM"
+          },
+          {
+            "module_id": "T3M30322",
+            "module_name": "Industrial Engineering II – Human Factors and System-Ergonomics in Manufacturing"
+          },
+          {
+            "module_id": "T3M30323",
+            "module_name": "Operations Management und Industrial Engineering II"
+          },
+          {
+            "module_id": "T3M30324",
+            "module_name": "Executive Operations Strategy I"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Industrial Engineering - Operations Management",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M30322",
+            "module_name": "Industrial Engineering II – Human Factors and System-Ergonomics in Manufacturing"
+          },
+          {
+            "module_id": "T3M30323",
+            "module_name": "Operations Management und Industrial Engineering II"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Industrial Engineering - Executive Operations",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M30324",
+            "module_name": "Executive Operations Strategy I"
+          },
+          {
+            "module_id": "T3M30326",
+            "module_name": "Executive Operations Strategy II"
+          },
+          {
+            "module_id": "T3M30327",
+            "module_name": "Executive Operations Strategy III"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Executive Engineering 1",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M90101",
+            "module_name": "Business Decision based Management"
+          },
+          {
+            "module_id": "T3M90102",
+            "module_name": "Mega Trend Management"
+          },
+          {
+            "module_id": "T3M90103",
+            "module_name": "Human Resources and Organizations Management"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Executive Engineering 2",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M90201",
+            "module_name": "Applied Technology"
+          },
+          {
+            "module_id": "T3M90202",
+            "module_name": "Edge and Future Technology"
+          },
+          {
+            "module_id": "T3M90203",
+            "module_name": "Technology in Practice"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Executive Engineering",
+      "modules_by_type": {
+        "CAS": [],
+        "DAS": [
+          {
+            "module_id": "T3M90101",
+            "module_name": "Business Decision based Management"
+          },
+          {
+            "module_id": "T3M90102",
+            "module_name": "Mega Trend Management"
+          },
+          {
+            "module_id": "T3M90103",
+            "module_name": "Human Resources and Organizations Management"
+          },
+          {
+            "module_id": "T3M90201",
+            "module_name": "Applied Technology"
+          },
+          {
+            "module_id": "T3M90202",
+            "module_name": "Edge and Future Technology"
+          },
+          {
+            "module_id": "T3M90203",
+            "module_name": "Technology in Practice"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Digital Production",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10207",
+            "module_name": "Mechatronische Systeme in der Anwendung"
+          },
+          {
+            "module_id": "T3M10302",
+            "module_name": "Automatisierungstechnik"
+          },
+          {
+            "module_id": "T3M30306",
+            "module_name": "Robotik"
+          },
+          {
+            "module_id": "T3M30801",
+            "module_name": "Technische Statistik"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M10207",
+            "module_name": "Mechatronische Systeme in der Anwendung"
+          },
+          {
+            "module_id": "T3M10302",
+            "module_name": "Automatisierungstechnik"
+          },
+          {
+            "module_id": "T3M30306",
+            "module_name": "Robotik"
+          },
+          {
+            "module_id": "T3M30308",
+            "module_name": "Industrial Engineering I - Lean-Management & Produktionssysteme nach MTM"
+          },
+          {
+            "module_id": "T3M30318",
+            "module_name": "Hochleistungswerkstoffe"
+          },
+          {
+            "module_id": "T3M30701",
+            "module_name": "Prozessorientiertes Qualitätsmanagement"
+          },
+          {
+            "module_id": "T3M30801",
+            "module_name": "Technische Statistik"
+          },
+          {
+            "module_id": "T3M30803",
+            "module_name": "Simulation in Produktion und Logistik"
+          },
+          {
+            "module_id": "T3M30804",
+            "module_name": "Modellbildung, Analyse und Simulation technischer Systeme"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Innovations- und Produktmanagement",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10104",
+            "module_name": "Product Lifecycle Management"
+          },
+          {
+            "module_id": "T3M10202",
+            "module_name": "Innovationsmanagement"
+          },
+          {
+            "module_id": "T3M30704",
+            "module_name": "Technologiemanagement"
+          },
+          {
+            "module_id": "W3M10804",
+            "module_name": "Design Thinking"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M10104",
+            "module_name": "Product Lifecycle Management"
+          },
+          {
+            "module_id": "T3M10201",
+            "module_name": "Methoden der Produktentwicklung"
+          },
+          {
+            "module_id": "T3M10202",
+            "module_name": "Innovationsmanagement"
+          },
+          {
+            "module_id": "T3M30216",
+            "module_name": "Internationales Marketing und Technischer Vertrieb"
+          },
+          {
+            "module_id": "T3M30702",
+            "module_name": "Qualitätsmanagement - Fortgeschrittene Methoden I"
+          },
+          {
+            "module_id": "T3M30704",
+            "module_name": "Technologiemanagement"
+          },
+          {
+            "module_id": "W3M10804",
+            "module_name": "Design Thinking"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Mechatronische Systeme",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10207",
+            "module_name": "Mechatronische Systeme in der Anwendung"
+          },
+          {
+            "module_id": "T3M10503",
+            "module_name": "Elektrische Antriebe"
+          },
+          {
+            "module_id": "T3M30804",
+            "module_name": "Modellbildung, Analyse und Simulation technischer Systeme"
+          },
+          {
+            "module_id": "T3M70304",
+            "module_name": "Grundlagen des Software Engineering"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M10207",
+            "module_name": "Mechatronische Systeme in der Anwendung"
+          },
+          {
+            "module_id": "T3M10503",
+            "module_name": "Elektrische Antriebe"
+          },
+          {
+            "module_id": "T3M10506",
+            "module_name": "Embedded Systems im Kraftfahrzeug"
+          },
+          {
+            "module_id": "T3M30319",
+            "module_name": "Werkstoffe in der Elektrotechnik"
+          },
+          {
+            "module_id": "T3M30501",
+            "module_name": "Einführung Elektrotechnik"
+          },
+          {
+            "module_id": "T3M30804",
+            "module_name": "Modellbildung, Analyse und Simulation technischer Systeme"
+          },
+          {
+            "module_id": "T3M70304",
+            "module_name": "Grundlagen des Software Engineering"
+          },
+          {
+            "module_id": "W3M20020",
+            "module_name": "Internet of Things"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Smart Operations Management",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M10304",
+            "module_name": "Produktionsmanagement"
+          },
+          {
+            "module_id": "T3M30308",
+            "module_name": "Industrial Engineering I - Lean-Management & Produktionssysteme nach MTM"
+          },
+          {
+            "module_id": "T3M30310",
+            "module_name": "Fertigungs- und Informationsmanagement"
+          },
+          {
+            "module_id": "T3M30811",
+            "module_name": "Business Optimization"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M10304",
+            "module_name": "Produktionsmanagement"
+          },
+          {
+            "module_id": "T3M30203",
+            "module_name": "Fach- und Führungsaufgaben im Einkauf"
+          },
+          {
+            "module_id": "T3M30305",
+            "module_name": "Fabrik- und Layoutplanung"
+          },
+          {
+            "module_id": "T3M30308",
+            "module_name": "Industrial Engineering I - Lean-Management & Produktionssysteme nach MTM"
+          },
+          {
+            "module_id": "T3M30310",
+            "module_name": "Fertigungs- und Informationsmanagement"
+          },
+          {
+            "module_id": "T3M30325",
+            "module_name": "Produktionslogistik und Supply Chain Management"
+          },
+          {
+            "module_id": "T3M30803",
+            "module_name": "Simulation in Produktion und Logistik"
+          },
+          {
+            "module_id": "T3M30809",
+            "module_name": "Sustainability Dynamics"
+          },
+          {
+            "module_id": "T3M30811",
+            "module_name": "Business Optimization"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Sustainability",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M30219",
+            "module_name": "Nachhaltigkeit und strategische Unternehmensführung"
+          },
+          {
+            "module_id": "T3M30704",
+            "module_name": "Technologiemanagement"
+          },
+          {
+            "module_id": "T3M30705",
+            "module_name": "Umweltmanagement in Unternehmen"
+          },
+          {
+            "module_id": "T3M80401",
+            "module_name": "Umwelt und Nachhaltigkeit"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M10104",
+            "module_name": "Product Lifecycle Management"
+          },
+          {
+            "module_id": "T3M10409",
+            "module_name": "Thermische Energietechnik & Regenerative Energien"
+          },
+          {
+            "module_id": "T3M10509",
+            "module_name": "Elektromobilität"
+          },
+          {
+            "module_id": "T3M20102",
+            "module_name": "Product Lifecycle Management in der Elektroindustrie"
+          },
+          {
+            "module_id": "T3M30219",
+            "module_name": "Nachhaltigkeit und strategische Unternehmensführung"
+          },
+          {
+            "module_id": "T3M30701",
+            "module_name": "Prozessorientiertes Qualitätsmanagement"
+          },
+          {
+            "module_id": "T3M30702",
+            "module_name": "Qualitätsmanagement - Fortgeschrittene Methoden I"
+          },
+          {
+            "module_id": "T3M30704",
+            "module_name": "Technologiemanagement"
+          },
+          {
+            "module_id": "T3M30705",
+            "module_name": "Umweltmanagement in Unternehmen"
+          },
+          {
+            "module_id": "T3M80401",
+            "module_name": "Umwelt und Nachhaltigkeit"
+          },
+          {
+            "module_id": "T3M80407",
+            "module_name": "Energieeffizientes Bauen"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Energieeffizienz und Nachhaltigkeit",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "SMPKS_13.1",
+            "module_name": "Intersektorale Zusammenarbeit"
+          },
+          {
+            "module_id": "T3M80401",
+            "module_name": "Umwelt und Nachhaltigkeit"
+          },
+          {
+            "module_id": "T3M80407",
+            "module_name": "Energieeffizientes Bauen"
+          },
+          {
+            "module_id": "XZ101",
+            "module_name": "Grundzüge des Nachhaltigkeits-Paradigmas"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Facility Management",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M80201",
+            "module_name": "Strategisches und technisches Facility Management"
+          },
+          {
+            "module_id": "T3M80202",
+            "module_name": "Brandschutzmanagement und Bauen im Bestand"
+          },
+          {
+            "module_id": "T3M80203",
+            "module_name": "Technische Gebäudeausrüstung und Gebäudeautomation"
+          },
+          {
+            "module_id": "T3M80204",
+            "module_name": "Digitalisierung im Facility- und Immobilienmanagement"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Sales Management",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M30216",
+            "module_name": "Internationales Marketing und Technischer Vertrieb"
+          },
+          {
+            "module_id": "T3M30225",
+            "module_name": "Nachhaltiges Produktmanagement im Investitionsgütermarketing"
+          },
+          {
+            "module_id": "W3M10804",
+            "module_name": "Design Thinking"
+          },
+          {
+            "module_id": "W3M11202",
+            "module_name": "Strategisches Verkaufsmanagement"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Infrastrukturmanagement",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M80301",
+            "module_name": "Verkehrsmodellierung und Verkehrsmanagement"
+          },
+          {
+            "module_id": "T3M80302",
+            "module_name": "Betrieb von Straßen und Straßenverkehrsanlagen"
+          },
+          {
+            "module_id": "T3M80303",
+            "module_name": "Versorgungs- und Entsorgungsnetze"
+          },
+          {
+            "module_id": "T3M80304",
+            "module_name": "Bau und Betrieb von Schienenverkehrsanlagen"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Konstruktiver Ingenieurbau",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M80101",
+            "module_name": "Stahl- und Spannbetonbau"
+          },
+          {
+            "module_id": "T3M80102",
+            "module_name": "Vertiefung Stahl- und Stahlbetonverbundbau"
+          },
+          {
+            "module_id": "T3M80103",
+            "module_name": "Vertiefung Holzbau"
+          },
+          {
+            "module_id": "T3M80104",
+            "module_name": "Industrie- und Ingenieurbau"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "BIM und Lean Construction Management",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "SMPKS_13.1",
+            "module_name": "Intersektorale Zusammenarbeit"
+          },
+          {
+            "module_id": "T3M80402",
+            "module_name": "Building Information Modeling (BIM)"
+          },
+          {
+            "module_id": "T3M80403",
+            "module_name": "Planungsprozesse und Lean Management"
+          },
+          {
+            "module_id": "T3M80405",
+            "module_name": "Projektmanagement Hoch- und Industriebau"
+          },
+          {
+            "module_id": "XZ101",
+            "module_name": "Grundzüge des Nachhaltigkeits-Paradigmas"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Knowledge and Information Management",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M40201",
+            "module_name": "Wissensmanagement-Modelle und -Strategien"
+          },
+          {
+            "module_id": "T3M40202",
+            "module_name": "Dokumentenmanagement und Geschäftsprozesse"
+          },
+          {
+            "module_id": "T3M40203",
+            "module_name": "Advanced Data Mining und Web Mining"
+          },
+          {
+            "module_id": "W3M10903",
+            "module_name": "Organisationspsychologie und-soziologie"
+          },
+          {
+            "module_id": "W3M20004",
+            "module_name": "Business Process Analytics, Simulation and Mining"
+          },
+          {
+            "module_id": "W3M20011",
+            "module_name": "Advanced Data Management"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M40201",
+            "module_name": "Wissensmanagement-Modelle und -Strategien"
+          },
+          {
+            "module_id": "T3M40202",
+            "module_name": "Dokumentenmanagement und Geschäftsprozesse"
+          },
+          {
+            "module_id": "T3M40203",
+            "module_name": "Advanced Data Mining und Web Mining"
+          },
+          {
+            "module_id": "W3M10903",
+            "module_name": "Organisationspsychologie und-soziologie"
+          },
+          {
+            "module_id": "W3M20004",
+            "module_name": "Business Process Analytics, Simulation and Mining"
+          },
+          {
+            "module_id": "W3M20011",
+            "module_name": "Advanced Data Management"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Future Skills",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "SMDiSA_05",
+            "module_name": "Organisationsentwicklung und Gestaltung digitaler Transformation"
+          },
+          {
+            "module_id": "SMDiSA_06",
+            "module_name": "Digitalisierung von Prozessen und digitale Geschäftsmodelle"
+          },
+          {
+            "module_id": "SMDiSA_07",
+            "module_name": "Grundlagen Datenschutz, IT-Sicherheit und IT-Recht"
+          },
+          {
+            "module_id": "SMDiSA_12",
+            "module_name": "Berufliche Selbstreflexion und Kompetenzentwicklung - Interdisziplinarität"
+          },
+          {
+            "module_id": "SMGSA_12",
+            "module_name": "Berufliche Selbstreflexion und Kompetenzentwicklung - Führung und Leitung"
+          },
+          {
+            "module_id": "SMPKS_09",
+            "module_name": "Soziale Innovationen fördern und Netzwerke gestalten"
+          },
+          {
+            "module_id": "SMPKS_12",
+            "module_name": "Berufliche Kompetenzentwicklung"
+          },
+          {
+            "module_id": "SMSAM_12",
+            "module_name": "Berufliche Selbstreflektion und Kompetenzentwicklung - Professionelle Identität und transkulturelle Kompetenz"
+          },
+          {
+            "module_id": "T3M30219",
+            "module_name": "Nachhaltigkeit und strategische Unternehmensführung"
+          },
+          {
+            "module_id": "T3M30221",
+            "module_name": "Agiles Projektmanagement mit Scrum"
+          },
+          {
+            "module_id": "T3M30801",
+            "module_name": "Technische Statistik"
+          },
+          {
+            "module_id": "T3M30810",
+            "module_name": "Einführung und Anwendung emergenzbasierter KI-Algorithmen"
+          },
+          {
+            "module_id": "T3M40301",
+            "module_name": "IT Service Management"
+          },
+          {
+            "module_id": "T3M40401",
+            "module_name": "Mobile Computing"
+          },
+          {
+            "module_id": "T3M40509",
+            "module_name": "Programming for Data Science"
+          },
+          {
+            "module_id": "T3M40610",
+            "module_name": "Methoden der künstlichen Intelligenz und Computational Intelligence"
+          },
+          {
+            "module_id": "T3M40611",
+            "module_name": "Maschinelles Lernen"
+          },
+          {
+            "module_id": "T3M70303",
+            "module_name": "Grundlagen Web Engineering"
+          },
+          {
+            "module_id": "T3M70304",
+            "module_name": "Grundlagen des Software Engineering"
+          },
+          {
+            "module_id": "T3M70305",
+            "module_name": "Grundlagen der Programmierung"
+          },
+          {
+            "module_id": "W3M10206",
+            "module_name": "Projekt- und Multi-Projekt-Management-Tools für Consultants"
+          },
+          {
+            "module_id": "W3M10207",
+            "module_name": "Business Development"
+          },
+          {
+            "module_id": "W3M10804",
+            "module_name": "Design Thinking"
+          },
+          {
+            "module_id": "W3M10805",
+            "module_name": "User Centered Design"
+          },
+          {
+            "module_id": "W3M10810",
+            "module_name": "Applied UX-Methods"
+          },
+          {
+            "module_id": "W3M10812",
+            "module_name": "Applied Data Analysis and Visualization"
+          },
+          {
+            "module_id": "W3M10813",
+            "module_name": "Information Systems for Data-driven Business"
+          },
+          {
+            "module_id": "W3M10909",
+            "module_name": "Digitale Transformation und Big Data in Organisationen"
+          },
+          {
+            "module_id": "W3M10911",
+            "module_name": "New Work: agiles Arbeiten und digitale Führung"
+          },
+          {
+            "module_id": "W3M11302",
+            "module_name": "Technologien der Digitalen Transformation und Anwendungen"
+          },
+          {
+            "module_id": "W3M11303",
+            "module_name": "Entwicklung digitaler Geschäftsmodelle"
+          },
+          {
+            "module_id": "W3M11305",
+            "module_name": "Business Analytics"
+          },
+          {
+            "module_id": "W3M11310",
+            "module_name": "Customer Experience Management"
+          },
+          {
+            "module_id": "W3M20002",
+            "module_name": "IT Project and Project Portfolio Management"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "SMDiSA_05",
+            "module_name": "Organisationsentwicklung und Gestaltung digitaler Transformation"
+          },
+          {
+            "module_id": "SMDiSA_06",
+            "module_name": "Digitalisierung von Prozessen und digitale Geschäftsmodelle"
+          },
+          {
+            "module_id": "SMDiSA_07",
+            "module_name": "Grundlagen Datenschutz, IT-Sicherheit und IT-Recht"
+          },
+          {
+            "module_id": "SMDiSA_12",
+            "module_name": "Berufliche Selbstreflexion und Kompetenzentwicklung - Interdisziplinarität"
+          },
+          {
+            "module_id": "SMGSA_12",
+            "module_name": "Berufliche Selbstreflexion und Kompetenzentwicklung - Führung und Leitung"
+          },
+          {
+            "module_id": "SMPKS_09",
+            "module_name": "Soziale Innovationen fördern und Netzwerke gestalten"
+          },
+          {
+            "module_id": "SMPKS_12",
+            "module_name": "Berufliche Kompetenzentwicklung"
+          },
+          {
+            "module_id": "SMSAM_12",
+            "module_name": "Berufliche Selbstreflektion und Kompetenzentwicklung - Professionelle Identität und transkulturelle Kompetenz"
+          },
+          {
+            "module_id": "T3M30219",
+            "module_name": "Nachhaltigkeit und strategische Unternehmensführung"
+          },
+          {
+            "module_id": "T3M30221",
+            "module_name": "Agiles Projektmanagement mit Scrum"
+          },
+          {
+            "module_id": "T3M30801",
+            "module_name": "Technische Statistik"
+          },
+          {
+            "module_id": "T3M30810",
+            "module_name": "Einführung und Anwendung emergenzbasierter KI-Algorithmen"
+          },
+          {
+            "module_id": "T3M40301",
+            "module_name": "IT Service Management"
+          },
+          {
+            "module_id": "T3M40401",
+            "module_name": "Mobile Computing"
+          },
+          {
+            "module_id": "T3M40509",
+            "module_name": "Programming for Data Science"
+          },
+          {
+            "module_id": "T3M40610",
+            "module_name": "Methoden der künstlichen Intelligenz und Computational Intelligence"
+          },
+          {
+            "module_id": "T3M40611",
+            "module_name": "Maschinelles Lernen"
+          },
+          {
+            "module_id": "T3M70303",
+            "module_name": "Grundlagen Web Engineering"
+          },
+          {
+            "module_id": "T3M70304",
+            "module_name": "Grundlagen des Software Engineering"
+          },
+          {
+            "module_id": "T3M70305",
+            "module_name": "Grundlagen der Programmierung"
+          },
+          {
+            "module_id": "W3M10206",
+            "module_name": "Projekt- und Multi-Projekt-Management-Tools für Consultants"
+          },
+          {
+            "module_id": "W3M10207",
+            "module_name": "Business Development"
+          },
+          {
+            "module_id": "W3M10804",
+            "module_name": "Design Thinking"
+          },
+          {
+            "module_id": "W3M10805",
+            "module_name": "User Centered Design"
+          },
+          {
+            "module_id": "W3M10807",
+            "module_name": "Analytics for Data-driven business"
+          },
+          {
+            "module_id": "W3M10810",
+            "module_name": "Applied UX-Methods"
+          },
+          {
+            "module_id": "W3M10812",
+            "module_name": "Applied Data Analysis and Visualization"
+          },
+          {
+            "module_id": "W3M10813",
+            "module_name": "Information Systems for Data-driven Business"
+          },
+          {
+            "module_id": "W3M10909",
+            "module_name": "Digitale Transformation und Big Data in Organisationen"
+          },
+          {
+            "module_id": "W3M10911",
+            "module_name": "New Work: agiles Arbeiten und digitale Führung"
+          },
+          {
+            "module_id": "W3M11301",
+            "module_name": "Strategische Aspekte der Digitalen Transformation"
+          },
+          {
+            "module_id": "W3M11302",
+            "module_name": "Technologien der Digitalen Transformation und Anwendungen"
+          },
+          {
+            "module_id": "W3M11303",
+            "module_name": "Entwicklung digitaler Geschäftsmodelle"
+          },
+          {
+            "module_id": "W3M11305",
+            "module_name": "Business Analytics"
+          },
+          {
+            "module_id": "W3M11306",
+            "module_name": "Digitalisierung betrieblicher Wertschöpfungsprozesse"
+          },
+          {
+            "module_id": "W3M11310",
+            "module_name": "Customer Experience Management"
+          },
+          {
+            "module_id": "W3M20002",
+            "module_name": "IT Project and Project Portfolio Management"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Komplexe Datenanalyse",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M30801",
+            "module_name": "Technische Statistik"
+          },
+          {
+            "module_id": "T3M40610",
+            "module_name": "Methoden der künstlichen Intelligenz und Computational Intelligence"
+          },
+          {
+            "module_id": "T3M40611",
+            "module_name": "Maschinelles Lernen"
+          },
+          {
+            "module_id": "T3M70305",
+            "module_name": "Grundlagen der Programmierung"
+          },
+          {
+            "module_id": "W3M10812",
+            "module_name": "Applied Data Analysis and Visualization"
+          },
+          {
+            "module_id": "W3M11305",
+            "module_name": "Business Analytics"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M30801",
+            "module_name": "Technische Statistik"
+          },
+          {
+            "module_id": "T3M40610",
+            "module_name": "Methoden der künstlichen Intelligenz und Computational Intelligence"
+          },
+          {
+            "module_id": "T3M40611",
+            "module_name": "Maschinelles Lernen"
+          },
+          {
+            "module_id": "T3M70305",
+            "module_name": "Grundlagen der Programmierung"
+          },
+          {
+            "module_id": "W3M10807",
+            "module_name": "Analytics for Data-driven business"
+          },
+          {
+            "module_id": "W3M10812",
+            "module_name": "Applied Data Analysis and Visualization"
+          },
+          {
+            "module_id": "W3M11305",
+            "module_name": "Business Analytics"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Nutzerzentriertes Design",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M40401",
+            "module_name": "Mobile Computing"
+          },
+          {
+            "module_id": "T3M70303",
+            "module_name": "Grundlagen Web Engineering"
+          },
+          {
+            "module_id": "T3M70304",
+            "module_name": "Grundlagen des Software Engineering"
+          },
+          {
+            "module_id": "W3M10805",
+            "module_name": "User Centered Design"
+          },
+          {
+            "module_id": "W3M10810",
+            "module_name": "Applied UX-Methods"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "T3M40401",
+            "module_name": "Mobile Computing"
+          },
+          {
+            "module_id": "T3M70303",
+            "module_name": "Grundlagen Web Engineering"
+          },
+          {
+            "module_id": "T3M70304",
+            "module_name": "Grundlagen des Software Engineering"
+          },
+          {
+            "module_id": "W3M10805",
+            "module_name": "User Centered Design"
+          },
+          {
+            "module_id": "W3M10810",
+            "module_name": "Applied UX-Methods"
+          },
+          {
+            "module_id": "W3M11310",
+            "module_name": "Customer Experience Management"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Kollaboration",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "SMDiSA_12",
+            "module_name": "Berufliche Selbstreflexion und Kompetenzentwicklung - Interdisziplinarität"
+          },
+          {
+            "module_id": "T3M30221",
+            "module_name": "Agiles Projektmanagement mit Scrum"
+          },
+          {
+            "module_id": "T3M40301",
+            "module_name": "IT Service Management"
+          },
+          {
+            "module_id": "W3M10804",
+            "module_name": "Design Thinking"
+          },
+          {
+            "module_id": "W3M10911",
+            "module_name": "New Work: agiles Arbeiten und digitale Führung"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Digital Literacy",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "SMDiSA_05",
+            "module_name": "Organisationsentwicklung und Gestaltung digitaler Transformation"
+          },
+          {
+            "module_id": "SMDiSA_06",
+            "module_name": "Digitalisierung von Prozessen und digitale Geschäftsmodelle"
+          },
+          {
+            "module_id": "SMDiSA_07",
+            "module_name": "Grundlagen Datenschutz, IT-Sicherheit und IT-Recht"
+          },
+          {
+            "module_id": "T3M30810",
+            "module_name": "Einführung und Anwendung emergenzbasierter KI-Algorithmen"
+          },
+          {
+            "module_id": "T3M40509",
+            "module_name": "Programming for Data Science"
+          },
+          {
+            "module_id": "W3M10909",
+            "module_name": "Digitale Transformation und Big Data in Organisationen"
+          },
+          {
+            "module_id": "W3M11302",
+            "module_name": "Technologien der Digitalen Transformation und Anwendungen"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "SMDiSA_05",
+            "module_name": "Organisationsentwicklung und Gestaltung digitaler Transformation"
+          },
+          {
+            "module_id": "SMDiSA_06",
+            "module_name": "Digitalisierung von Prozessen und digitale Geschäftsmodelle"
+          },
+          {
+            "module_id": "SMDiSA_07",
+            "module_name": "Grundlagen Datenschutz, IT-Sicherheit und IT-Recht"
+          },
+          {
+            "module_id": "T3M30810",
+            "module_name": "Einführung und Anwendung emergenzbasierter KI-Algorithmen"
+          },
+          {
+            "module_id": "T3M40509",
+            "module_name": "Programming for Data Science"
+          },
+          {
+            "module_id": "W3M10813",
+            "module_name": "Information Systems for Data-driven Business"
+          },
+          {
+            "module_id": "W3M10909",
+            "module_name": "Digitale Transformation und Big Data in Organisationen"
+          },
+          {
+            "module_id": "W3M11302",
+            "module_name": "Technologien der Digitalen Transformation und Anwendungen"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Durchhaltevermögen",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "SMGSA_12",
+            "module_name": "Berufliche Selbstreflexion und Kompetenzentwicklung - Führung und Leitung"
+          },
+          {
+            "module_id": "SMPKS_12",
+            "module_name": "Berufliche Kompetenzentwicklung"
+          },
+          {
+            "module_id": "SMSAM_12",
+            "module_name": "Berufliche Selbstreflektion und Kompetenzentwicklung - Professionelle Identität und transkulturelle Kompetenz"
+          },
+          {
+            "module_id": "W3M10206",
+            "module_name": "Projekt- und Multi-Projekt-Management-Tools für Consultants"
+          },
+          {
+            "module_id": "W3M20002",
+            "module_name": "IT Project and Project Portfolio Management"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Unternehmerisches Handeln und Eigeninitiative",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "SMPKS_09",
+            "module_name": "Soziale Innovationen fördern und Netzwerke gestalten"
+          },
+          {
+            "module_id": "T3M30219",
+            "module_name": "Nachhaltigkeit und strategische Unternehmensführung"
+          },
+          {
+            "module_id": "W3M10207",
+            "module_name": "Business Development"
+          },
+          {
+            "module_id": "W3M11303",
+            "module_name": "Entwicklung digitaler Geschäftsmodelle"
+          },
+          {
+            "module_id": "W3M20003",
+            "module_name": "Business Process Management & Modelling"
+          }
+        ],
+        "DAS": [
+          {
+            "module_id": "SMPKS_09",
+            "module_name": "Soziale Innovationen fördern und Netzwerke gestalten"
+          },
+          {
+            "module_id": "T3M30219",
+            "module_name": "Nachhaltigkeit und strategische Unternehmensführung"
+          },
+          {
+            "module_id": "W3M10207",
+            "module_name": "Business Development"
+          },
+          {
+            "module_id": "W3M11301",
+            "module_name": "Strategische Aspekte der Digitalen Transformation"
+          },
+          {
+            "module_id": "W3M11303",
+            "module_name": "Entwicklung digitaler Geschäftsmodelle"
+          },
+          {
+            "module_id": "W3M11306",
+            "module_name": "Digitalisierung betrieblicher Wertschöpfungsprozesse"
+          },
+          {
+            "module_id": "W3M20003",
+            "module_name": "Business Process Management & Modelling"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Business Process Management",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "W3M20001",
+            "module_name": "IT-Governance & IT-Strategy"
+          },
+          {
+            "module_id": "W3M20002",
+            "module_name": "IT Project and Project Portfolio Management"
+          },
+          {
+            "module_id": "W3M20003",
+            "module_name": "Business Process Management & Modelling"
+          },
+          {
+            "module_id": "W3M20004",
+            "module_name": "Business Process Analytics, Simulation and Mining"
+          },
+          {
+            "module_id": "W3M20005",
+            "module_name": "Strategic Management of Digital Business Processes"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Data Science",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M40611",
+            "module_name": "Maschinelles Lernen"
+          },
+          {
+            "module_id": "W3M20025",
+            "module_name": "Business Data Science"
+          },
+          {
+            "module_id": "W3M20026",
+            "module_name": "Data Science – Processes and Algorithms"
+          },
+          {
+            "module_id": "W3M20027",
+            "module_name": "Big Data Engineering"
+          },
+          {
+            "module_id": "W3M20035",
+            "module_name": "Cloud Infrastructures and Cloud Native Applications"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Enterprise Information Systems",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "W3M20008",
+            "module_name": "Paradigmen moderner Unternehmensanwendungen"
+          },
+          {
+            "module_id": "W3M20009",
+            "module_name": "Development of Mobile Business Applications"
+          },
+          {
+            "module_id": "W3M20012",
+            "module_name": "Advanced Topics of Software Engineering"
+          },
+          {
+            "module_id": "W3M20029",
+            "module_name": "Software Quality Engineering"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Information Security Management",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M40304",
+            "module_name": "IT-Sicherheit"
+          },
+          {
+            "module_id": "W3M20001",
+            "module_name": "IT-Governance & IT-Strategy"
+          },
+          {
+            "module_id": "W3M20014",
+            "module_name": "IT-Security Cryptography and Secure Communications"
+          },
+          {
+            "module_id": "W3M20015",
+            "module_name": "Information Security Management"
+          },
+          {
+            "module_id": "W3M20017",
+            "module_name": "IT-Security Attack and Defense"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "IT-Consulting",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "W3M20001",
+            "module_name": "IT-Governance & IT-Strategy"
+          },
+          {
+            "module_id": "W3M20002",
+            "module_name": "IT Project and Project Portfolio Management"
+          },
+          {
+            "module_id": "W3M20004",
+            "module_name": "Business Process Analytics, Simulation and Mining"
+          },
+          {
+            "module_id": "W3M20041",
+            "module_name": "Vertrieb und Verhandlungen im IT-Consulting"
+          },
+          {
+            "module_id": "W3M20042",
+            "module_name": "Advanced Aspects in IT-Consulting"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Management Digitaler Infrastrukturen im Kontext Digitaler Transformation",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M40303",
+            "module_name": "Enterprise Architecture"
+          },
+          {
+            "module_id": "W3M11301",
+            "module_name": "Strategische Aspekte der Digitalen Transformation"
+          },
+          {
+            "module_id": "W3M11304",
+            "module_name": "Digitale Ökosysteme"
+          },
+          {
+            "module_id": "W3M20008",
+            "module_name": "Paradigmen moderner Unternehmensanwendungen"
+          },
+          {
+            "module_id": "W3M20020",
+            "module_name": "Internet of Things"
+          },
+          {
+            "module_id": "W3M20023",
+            "module_name": "Blockchain-Technologie, Smart Contracts und digitale Plattformen"
+          },
+          {
+            "module_id": "W3M20036",
+            "module_name": "Management Digitaler Infrastrukturen"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Strategic IT-Management and Digital Leadership",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M40303",
+            "module_name": "Enterprise Architecture"
+          },
+          {
+            "module_id": "W3M11301",
+            "module_name": "Strategische Aspekte der Digitalen Transformation"
+          },
+          {
+            "module_id": "W3M20001",
+            "module_name": "IT-Governance & IT-Strategy"
+          },
+          {
+            "module_id": "W3M20002",
+            "module_name": "IT Project and Project Portfolio Management"
+          },
+          {
+            "module_id": "W3M20007",
+            "module_name": "Advanced Aspects in E-Business & Digitalization"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Mensch-Maschine-Systeme",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M40401",
+            "module_name": "Mobile Computing"
+          },
+          {
+            "module_id": "T3M40505",
+            "module_name": "Intelligente Interaktive Systeme"
+          },
+          {
+            "module_id": "T3M40604",
+            "module_name": "Intelligente Autonome Robotersysteme"
+          },
+          {
+            "module_id": "W3M10804",
+            "module_name": "Design Thinking"
+          },
+          {
+            "module_id": "W3M10805",
+            "module_name": "User Centered Design"
+          },
+          {
+            "module_id": "W3M50015",
+            "module_name": "Computerlinguistik und Sprachtechnologien"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Data Science & Mensch-Maschine-Systeme",
+      "modules_by_type": {
+        "CAS": [],
+        "DAS": [
+          {
+            "module_id": "T3M40401",
+            "module_name": "Mobile Computing"
+          },
+          {
+            "module_id": "T3M40505",
+            "module_name": "Intelligente Interaktive Systeme"
+          },
+          {
+            "module_id": "T3M40604",
+            "module_name": "Intelligente Autonome Robotersysteme"
+          },
+          {
+            "module_id": "W3M10804",
+            "module_name": "Design Thinking"
+          },
+          {
+            "module_id": "W3M10805",
+            "module_name": "User Centered Design"
+          },
+          {
+            "module_id": "W3M50015",
+            "module_name": "Computerlinguistik und Sprachtechnologien"
+          }
+        ]
+      }
+    },
+    {
+      "certificate_name": "Softwareentwicklung",
+      "modules_by_type": {
+        "CAS": [
+          {
+            "module_id": "T3M40103",
+            "module_name": "Systementwicklung und Architektur"
+          },
+          {
+            "module_id": "T3M40502",
+            "module_name": "Advanced Algorithms"
+          },
+          {
+            "module_id": "T3M40503",
+            "module_name": "Einsatz funktionaler Programmiersprachen"
+          },
+          {
+            "module_id": "T3M40504",
+            "module_name": "Agile Prozessmodelle"
+          },
+          {
+            "module_id": "T3M40505",
+            "module_name": "Intelligente Interaktive Systeme"
+          },
+          {
+            "module_id": "T3M40506",
+            "module_name": "Advanced Software Engineering"
+          },
+          {
+            "module_id": "T3M40509",
+            "module_name": "Programming for Data Science"
+          },
+          {
+            "module_id": "T3M40606",
+            "module_name": "Seminar Programmiersprachen"
+          },
+          {
+            "module_id": "W3M20002",
+            "module_name": "IT Project and Project Portfolio Management"
+          },
+          {
+            "module_id": "W3M20012",
+            "module_name": "Advanced Topics of Software Engineering"
+          },
+          {
+            "module_id": "W3M20029",
+            "module_name": "Software Quality Engineering"
+          }
+        ],
+        "DAS": []
+      }
+    },
+    {
+      "certificate_name": "Advanced Software Engineering",
+      "modules_by_type": {
+        "CAS": [],
+        "DAS": [
+          {
+            "module_id": "T3M40103",
+            "module_name": "Systementwicklung und Architektur"
+          },
+          {
+            "module_id": "T3M40502",
+            "module_name": "Advanced Algorithms"
+          },
+          {
+            "module_id": "T3M40503",
+            "module_name": "Einsatz funktionaler Programmiersprachen"
+          },
+          {
+            "module_id": "T3M40504",
+            "module_name": "Agile Prozessmodelle"
+          },
+          {
+            "module_id": "T3M40505",
+            "module_name": "Intelligente Interaktive Systeme"
+          },
+          {
+            "module_id": "T3M40506",
+            "module_name": "Advanced Software Engineering"
+          },
+          {
+            "module_id": "T3M40509",
+            "module_name": "Programming for Data Science"
+          },
+          {
+            "module_id": "T3M40606",
+            "module_name": "Seminar Programmiersprachen"
+          },
+          {
+            "module_id": "W3M20002",
+            "module_name": "IT Project and Project Portfolio Management"
+          },
+          {
+            "module_id": "W3M20012",
+            "module_name": "Advanced Topics of Software Engineering"
+          },
+          {
+            "module_id": "W3M20029",
+            "module_name": "Software Quality Engineering"
+          }
+        ]
+      }
+    }
+  ]
+}
