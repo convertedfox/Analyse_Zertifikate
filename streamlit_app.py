@@ -204,7 +204,7 @@ def render_app() -> None:
     select_options = [(left, right) for left, right, _score in top_20_pairs]
     if selected_pair not in select_options:
         select_options.insert(0, selected_pair)
-    if st.session_state.get(PAIR_SELECT_KEY) not in select_options:
+    if st.session_state.get(PAIR_SELECT_KEY) != selected_pair:
         st.session_state[PAIR_SELECT_KEY] = selected_pair
 
     st.subheader("Top-20-Paare")
@@ -240,7 +240,6 @@ def render_app() -> None:
     pair_from_chart = extract_pair_from_event(event)
     if pair_from_chart and pair_from_chart != selected_pair:
         st.session_state[SELECTED_PAIR_KEY] = pair_from_chart
-        st.session_state[PAIR_SELECT_KEY] = pair_from_chart
         st.session_state[CHART_GENERATION_KEY] = generation + 1
         st.rerun()
 
