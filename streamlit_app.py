@@ -8,6 +8,7 @@ import pandas as pd
 import streamlit as st
 
 from certificate_dashboard.data import (
+    DatasetValidationError,
     TypeFilter,
     load_dataset,
     merged_modules,
@@ -21,16 +22,22 @@ from certificate_dashboard.similarity import (
     top_pairs,
 )
 from certificate_dashboard.ui_helpers import extract_pair_from_event
+from certificate_dashboard.view import add_axis_codes, focus_names, resolve_pair
 
-DATA_PATH = Path("data/certificates.json")
+ROOT_DIR = Path(__file__).resolve().parent
+DATA_PATH = ROOT_DIR / "data" / "certificates.json"
 SELECTED_PAIR_KEY = "selected_pair"
-SELECTED_PAIR_FROM_HEATMAP_KEY = "selected_pair_from_heatmap"
+PAIR_SELECT_KEY = "pair_select"
+CHART_GENERATION_KEY = "chart_generation"
 
 
 @st.cache_data(show_spinner=False)
-def load_dashboard_data(path: str) -> tuple[list[str], dict[str, CertificateEntry]]:
-    selected_names, certificates = load_dataset(Path(path))
-    return selected_names, certificates
+def load_dashboard_data(
+    path: str,
+    modified_ns: int,
+) -> tuple[list[str], dict[str, CertificateEntry]]:
+    del modified_ns
+    return load_dataset(Path(path))
 
 
 def summarize_modules(module_ids: tuple[str, ...], lookup: dict[str, str]) -> pd.DataFrame:
@@ -42,56 +49,50 @@ def summarize_modules(module_ids: tuple[str, ...], lookup: dict[str, str]) -> pd
     )
 
 
-def ensure_pair_state(
-    pair_candidates: list[tuple[str, str, float]],
-) -> tuple[str, str, float]:
-    if not pair_candidates:
-        raise ValueError("No pair candidates available")
-
-    fallback = pair_candidates[0]
-    pair_map = {(a, b): score for a, b, score in pair_candidates}
-    selected_pair = st.session_state.get(SELECTED_PAIR_KEY)
-
-    if selected_pair is None:
-        st.session_state[SELECTED_PAIR_KEY] = (fallback[0], fallback[1])
-        return fallback
-
-    pair_key = tuple(selected_pair)
-    if pair_key in pair_map:
-        return (pair_key[0], pair_key[1], pair_map[pair_key])
-
-    st.session_state[SELECTED_PAIR_KEY] = (fallback[0], fallback[1])
-    return fallback
+def pair_label(pair: tuple[str, str], score_lookup: dict[tuple[str, str], float]) -> str:
+    score = score_lookup[pair]
+    return f"{pair[0]} ↔ {pair[1]} (Jaccard {score:.2f})"
 
 
-def pair_label(certificate_a: str, certificate_b: str, score: float) -> str:
-    return f"{certificate_a} ↔ {certificate_b} (Jaccard {score:.2f})"
+def update_pair_from_selectbox() -> None:
+    st.session_state[SELECTED_PAIR_KEY] = st.session_state[PAIR_SELECT_KEY]
+    st.session_state[CHART_GENERATION_KEY] = st.session_state.get(CHART_GENERATION_KEY, 0) + 1
+
+
+def resolve_selected_pair(
+    visible_pairs: list[tuple[str, str, float]],
+) -> tuple[str, str]:
+    selected = resolve_pair(visible_pairs, st.session_state.get(SELECTED_PAIR_KEY))
+    st.session_state[SELECTED_PAIR_KEY] = selected
+    return selected
 
 
 def build_heatmap(
     pair_frame: pd.DataFrame,
     threshold: float,
     selected_pair: tuple[str, str],
+    certificate_count: int,
 ) -> Any:
     visible = pair_frame[pair_frame["jaccard"] >= threshold].copy()
     hidden = pair_frame[pair_frame["jaccard"] < threshold].copy()
+    axis = alt.Axis(title="Zertifikat (Nr.)", labelAngle=0, labelOverlap="greedy")
+    tooltip = [
+        alt.Tooltip("certificate_a:N", title="Zertifikat A"),
+        alt.Tooltip("certificate_b:N", title="Zertifikat B"),
+        alt.Tooltip("jaccard:Q", title="Jaccard", format=".3f"),
+        alt.Tooltip("shared_module_count:Q", title="Gemeinsame Module"),
+    ]
 
-    base = (
+    neutral = (
         alt.Chart(hidden)
-        .mark_rect(stroke="#d6cec2", strokeWidth=0.2)
+        .mark_rect(stroke="#d6cec2", strokeWidth=0.2, color="#ece8e0")
         .encode(
-            x=alt.X("col_index:O", axis=None),
-            y=alt.Y("row_index:O", axis=None),
-            tooltip=[
-                alt.Tooltip("certificate_a:N", title="Zertifikat A"),
-                alt.Tooltip("certificate_b:N", title="Zertifikat B"),
-                alt.Tooltip("jaccard:Q", title="Jaccard", format=".3f"),
-            ],
+            x=alt.X("certificate_b_code:O", title="Zertifikat (Nr.)", axis=axis),
+            y=alt.Y("certificate_a_code:O", title="Zertifikat (Nr.)", axis=axis),
+            tooltip=tooltip,
         )
-        .properties(height=650)
+        .properties(height=max(520, certificate_count * 15))
     )
-
-    neutral = base.encode(color=alt.value("#ece8e0"))
 
     click_selection = alt.selection_point(
         name="selected_pair",
@@ -99,32 +100,23 @@ def build_heatmap(
         on="click",
         clear=False,
         empty=False,
+        toggle=False,
     )
-
     active = (
         alt.Chart(visible)
         .mark_rect(stroke="#d6cec2", strokeWidth=0.2)
         .encode(
-            x=alt.X("col_index:O", axis=None),
-            y=alt.Y("row_index:O", axis=None),
+            x=alt.X("certificate_b_code:O", title="Zertifikat (Nr.)", axis=axis),
+            y=alt.Y("certificate_a_code:O", title="Zertifikat (Nr.)", axis=axis),
             color=alt.Color(
                 "jaccard:Q",
                 title="Jaccard",
-                scale=alt.Scale(
-                    domain=[threshold, 1],
-                    range=["#efeae1", "#793521"],
-                ),
+                scale=alt.Scale(domain=[0, 1], range=["#efeae1", "#793521"]),
             ),
-            tooltip=[
-                alt.Tooltip("certificate_a:N", title="Zertifikat A"),
-                alt.Tooltip("certificate_b:N", title="Zertifikat B"),
-                alt.Tooltip("jaccard:Q", title="Jaccard", format=".3f"),
-                alt.Tooltip("shared_module_count:Q", title="Gemeinsame Module"),
-            ],
+            tooltip=tooltip,
         )
         .add_params(click_selection)
     )
-
     selected_overlay = (
         alt.Chart(
             visible[
@@ -134,11 +126,10 @@ def build_heatmap(
         )
         .mark_rect(stroke="#2e2a26", strokeWidth=2, fillOpacity=0)
         .encode(
-            x=alt.X("col_index:O", axis=None),
-            y=alt.Y("row_index:O", axis=None),
+            x=alt.X("certificate_b_code:O", axis=axis),
+            y=alt.Y("certificate_a_code:O", axis=axis),
         )
     )
-
     return neutral + active + selected_overlay
 
 
@@ -148,7 +139,6 @@ def render_app() -> None:
         page_icon="▦",
         layout="wide",
     )
-
     st.title("Zertifikatsähnlichkeiten nach Modulen")
     st.caption(
         "Vergleich über Jaccard-Ähnlichkeit: "
@@ -156,33 +146,31 @@ def render_app() -> None:
     )
 
     if not DATA_PATH.exists():
-        st.error(
-            "Daten fehlen: Bitte zuerst `uv run python scripts/export_certificates.py` ausführen."
-        )
+        st.error("Daten fehlen: Bitte `uv run python scripts/export_certificates.py` ausführen.")
         st.stop()
 
-    ordered_names, certificates = load_dashboard_data(str(DATA_PATH))
+    try:
+        ordered_names, certificates = load_dashboard_data(
+            str(DATA_PATH),
+            DATA_PATH.stat().st_mtime_ns,
+        )
+    except DatasetValidationError as exc:
+        st.error(f"Der Datenbestand ist ungültig: {exc}")
+        st.stop()
     module_lookup = module_name_lookup(certificates)
 
     with st.sidebar:
         st.subheader("Filter")
-
         type_filter = st.segmented_control(
             "Zertifikatstyp",
             options=["CAS", "DAS", "CAS+DAS"],
             default="CAS+DAS",
+            selection_mode="single",
+            required=True,
         )
-        if type_filter is None:
-            type_filter = "CAS+DAS"
         selected_type_filter = cast(TypeFilter, type_filter)
-
         threshold = st.slider(
             "Mindestähnlichkeit", min_value=0.0, max_value=1.0, value=0.3, step=0.01
-        )
-
-        st.caption(
-            "Bei gleichnamigen Zertifikaten folgt das Modulset dem Typfilter: "
-            "CAS, DAS oder Vereinigung."
         )
 
     active_names = names_with_modules(ordered_names, certificates, selected_type_filter)
@@ -190,86 +178,87 @@ def render_app() -> None:
         st.warning("Mit diesem Typfilter gibt es weniger als zwei analysierbare Zertifikate.")
         st.stop()
 
-    pair_frame = build_upper_triangle_pairs(active_names, certificates, selected_type_filter)
-    visible_pairs = top_pairs(pair_frame, threshold, limit=5000)
+    all_pair_frame = build_upper_triangle_pairs(active_names, certificates, selected_type_filter)
+    with st.sidebar:
+        focus = st.selectbox(
+            "Fokuszertifikat",
+            options=["Alle Zertifikate", *active_names],
+            help="Zeigt im Fokusmodus das Zertifikat und seine 19 ähnlichsten Nachbarn.",
+        )
+        st.caption(
+            "Bei gleichnamigen Zertifikaten folgt das Modulset dem Typfilter: "
+            "CAS, DAS oder Vereinigung."
+        )
+
+    matrix_names = focus_names(active_names, all_pair_frame, focus)
+    pair_frame = build_upper_triangle_pairs(matrix_names, certificates, selected_type_filter)
+    pair_frame = add_axis_codes(pair_frame, matrix_names)
+    visible_pairs = top_pairs(pair_frame, threshold, limit=len(pair_frame))
     if not visible_pairs:
         st.info("Kein Zertifikatspaar erreicht den aktuellen Schwellwert.")
         st.stop()
 
     top_20_pairs = top_pairs(pair_frame, threshold, limit=20)
+    score_lookup = {(left, right): score for left, right, score in visible_pairs}
+    selected_pair = resolve_selected_pair(visible_pairs)
+    select_options = [(left, right) for left, right, _score in top_20_pairs]
+    if selected_pair not in select_options:
+        select_options.insert(0, selected_pair)
+    if st.session_state.get(PAIR_SELECT_KEY) not in select_options:
+        st.session_state[PAIR_SELECT_KEY] = selected_pair
+
+    st.subheader("Top-20-Paare")
+    st.selectbox(
+        "Paar auswählen",
+        options=select_options,
+        key=PAIR_SELECT_KEY,
+        format_func=lambda pair: pair_label(pair, score_lookup),
+        on_change=update_pair_from_selectbox,
+    )
+    selected_pair = cast(tuple[str, str], st.session_state[SELECTED_PAIR_KEY])
 
     modules_per_certificate = {
-        name: len(merged_modules(certificates[name], selected_type_filter)) for name in active_names
+        name: len(merged_modules(certificates[name], selected_type_filter)) for name in matrix_names
     }
     metric_one, metric_two, metric_three = st.columns(3)
-    metric_one.metric("Zertifikate", len(active_names), border=True)
+    metric_one.metric("Zertifikate", len(matrix_names), border=True)
     metric_two.metric(
         "Durchschnittliche Module", f"{pd.Series(modules_per_certificate).mean():.1f}", border=True
     )
     metric_three.metric("Paare über Schwelle", len(visible_pairs), border=True)
 
     st.subheader("Ähnlichkeitsmatrix (oberes Dreieck)")
-
-    current_pair = ensure_pair_state(visible_pairs)
-    chart = build_heatmap(pair_frame, threshold, (current_pair[0], current_pair[1]))
+    chart = build_heatmap(pair_frame, threshold, selected_pair, len(matrix_names))
+    generation = st.session_state.get(CHART_GENERATION_KEY, 0)
     event = st.altair_chart(
         chart,
         width="stretch",
         on_select="rerun",
         selection_mode=["selected_pair"],
-        key="similarity_heatmap",
+        key=f"similarity_heatmap_{generation}",
     )
-
     pair_from_chart = extract_pair_from_event(event)
-    if pair_from_chart and pair_from_chart != st.session_state.get(SELECTED_PAIR_FROM_HEATMAP_KEY):
-        st.session_state[SELECTED_PAIR_FROM_HEATMAP_KEY] = pair_from_chart
+    if pair_from_chart and pair_from_chart != selected_pair:
         st.session_state[SELECTED_PAIR_KEY] = pair_from_chart
+        st.session_state[PAIR_SELECT_KEY] = pair_from_chart
+        st.session_state[CHART_GENERATION_KEY] = generation + 1
         st.rerun()
 
-    st.subheader("Top-20-Paare")
-    option_labels = [pair_label(a, b, score) for a, b, score in top_20_pairs]
-
-    top_map = {(a, b): score for a, b, score in top_20_pairs}
-    selected_pair_key = cast(tuple[str, str], st.session_state[SELECTED_PAIR_KEY])
-
-    selected_label_default: str
-    if selected_pair_key not in top_map:
-        score_map = {(a, b): score for a, b, score in visible_pairs}
-        selected_score = score_map[selected_pair_key]
-        selected_label_default = (
-            "Aktuelle Heatmap-Auswahl: "
-            f"{pair_label(selected_pair_key[0], selected_pair_key[1], selected_score)}"
+    with st.expander("Nummern der Zertifikate"):
+        st.dataframe(
+            pd.DataFrame(
+                {
+                    "Nr.": [f"{index + 1:02d}" for index in range(len(matrix_names))],
+                    "Zertifikat": matrix_names,
+                }
+            ),
+            width="stretch",
+            hide_index=True,
         )
-        option_labels = [selected_label_default, *option_labels]
-    else:
-        selected_score = top_map[selected_pair_key]
-        selected_label_default = pair_label(
-            selected_pair_key[0], selected_pair_key[1], selected_score
-        )
-
-    selected_label = st.selectbox(
-        "Paar (Top 20)",
-        options=option_labels,
-        index=option_labels.index(selected_label_default),
-    )
-
-    if selected_label.startswith("Aktuelle Heatmap-Auswahl:"):
-        selected_lookup = {pair_label(a, b, score): (a, b, score) for a, b, score in visible_pairs}
-        selected_key = selected_label.replace("Aktuelle Heatmap-Auswahl: ", "")
-        chosen_pair = selected_lookup[selected_key]
-    else:
-        selected_lookup = {pair_label(a, b, score): (a, b, score) for a, b, score in top_20_pairs}
-        chosen_pair = selected_lookup[selected_label]
-
-    st.session_state[SELECTED_PAIR_KEY] = (chosen_pair[0], chosen_pair[1])
 
     comparison = compare_pair(
-        chosen_pair[0],
-        chosen_pair[1],
-        certificates,
-        selected_type_filter,
+        selected_pair[0], selected_pair[1], certificates, selected_type_filter
     )
-
     st.markdown(
         f"**{comparison.certificate_a} ↔ {comparison.certificate_b}** · "
         f"Jaccard: **{comparison.jaccard:.3f}** · "
@@ -277,30 +266,20 @@ def render_app() -> None:
     )
 
     shared_col, only_a_col, only_b_col = st.columns(3)
-    with shared_col:
-        st.markdown("**Gemeinsame Module**")
-        st.dataframe(
-            summarize_modules(comparison.shared_module_ids, module_lookup),
-            use_container_width=True,
-            hide_index=True,
-            height=320,
-        )
-    with only_a_col:
-        st.markdown(f"**Nur in {comparison.certificate_a}**")
-        st.dataframe(
-            summarize_modules(comparison.only_a_module_ids, module_lookup),
-            use_container_width=True,
-            hide_index=True,
-            height=320,
-        )
-    with only_b_col:
-        st.markdown(f"**Nur in {comparison.certificate_b}**")
-        st.dataframe(
-            summarize_modules(comparison.only_b_module_ids, module_lookup),
-            use_container_width=True,
-            hide_index=True,
-            height=320,
-        )
+    tables = (
+        (shared_col, "Gemeinsame Module", comparison.shared_module_ids),
+        (only_a_col, f"Nur in {comparison.certificate_a}", comparison.only_a_module_ids),
+        (only_b_col, f"Nur in {comparison.certificate_b}", comparison.only_b_module_ids),
+    )
+    for column, title, module_ids in tables:
+        with column:
+            st.markdown(f"**{title}**")
+            st.dataframe(
+                summarize_modules(module_ids, module_lookup),
+                width="stretch",
+                hide_index=True,
+                height=320,
+            )
 
 
 render_app()

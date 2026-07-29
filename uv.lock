@@ -18,6 +18,7 @@ name = "1079-analyse-zertifikate"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "altair" },
     { name = "openpyxl" },
     { name = "pandas" },
     { name = "streamlit" },
@@ -32,9 +33,10 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "altair", specifier = ">=6.0.0,<7" },
     { name = "openpyxl", specifier = ">=3.1.5" },
-    { name = "pandas", specifier = ">=2.3.1" },
-    { name = "streamlit", specifier = ">=1.47.0" },
+    { name = "pandas", specifier = ">=2.3.1,<4" },
+    { name = "streamlit", specifier = ">=1.60.0,<2" },
 ]
 
 [package.metadata.requires-dev]

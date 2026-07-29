@@ -2,7 +2,14 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from certificate_dashboard.data import load_dataset, merged_modules, names_with_modules
+import pytest
+
+from certificate_dashboard.data import (
+    DatasetValidationError,
+    load_dataset,
+    merged_modules,
+    names_with_modules,
+)
 
 
 def test_load_dataset_contains_selected_certificates() -> None:
@@ -32,3 +39,22 @@ def test_merged_modules_union_mode_merges_types() -> None:
 
     assert union_ids == cas_ids | das_ids
     assert len(union_ids) == 15
+
+
+def test_load_dataset_rejects_unknown_schema(tmp_path: Path) -> None:
+    dataset = tmp_path / "certificates.json"
+    dataset.write_text('{"schema_version": 999}', encoding="utf-8")
+
+    with pytest.raises(DatasetValidationError, match="Unsupported schema version"):
+        load_dataset(dataset)
+
+
+def test_load_dataset_rejects_invalid_structure(tmp_path: Path) -> None:
+    dataset = tmp_path / "certificates.json"
+    dataset.write_text(
+        '{"schema_version": 1, "selected_certificate_names": [], "certificates": {}}',
+        encoding="utf-8",
+    )
+
+    with pytest.raises(DatasetValidationError, match="certificates must be a list"):
+        load_dataset(dataset)

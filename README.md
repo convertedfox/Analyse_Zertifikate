@@ -13,9 +13,10 @@ Schnell erkennen, welche Zertifikate sich inhaltlich stark überschneiden.
 ## Datenfluss
 
 1. Excel wird validiert und in ein deterministisches JSON exportiert.
-2. Streamlit lädt JSON gecached via `st.cache_data`.
-3. Für den gewählten Typfilter (`CAS`, `DAS`, `CAS+DAS`) wird die Matrix berechnet.
-4. Heatmap zeigt Jaccard-Werte; darunter ein Paarvergleich mit Modul-Differenz.
+2. Das JSON enthält eine Schema-Version und wird beim Laden strukturell validiert.
+3. Streamlit lädt JSON gecached via `st.cache_data`; Änderungen invalidieren den Cache.
+4. Für den gewählten Typfilter (`CAS`, `DAS`, `CAS+DAS`) wird die Matrix berechnet.
+5. Die klickbare Heatmap zeigt Jaccard-Werte; darunter folgt der Modulvergleich.
 
 ## Setup
 
@@ -30,7 +31,15 @@ uv run python scripts/export_certificates.py --check
 uv run python scripts/export_certificates.py
 ```
 
-Erzeugt: `data/certificates.json`
+Erzeugt: `data/certificates.json`. `--check` schlägt fehl, wenn das JSON fehlt oder nicht mehr
+dem Excel-Inhalt entspricht.
+
+## Bedienung
+
+- Typfilter steuert, ob CAS-, DAS- oder vereinigte Modulsets verglichen werden.
+- Mindestähnlichkeit blendet schwächere Paare aus der Top-Liste aus.
+- Ein Fokuszertifikat reduziert die Matrix auf dessen 19 ähnlichste Nachbarn.
+- Ein Klick in die Heatmap oder eine Auswahl aus den Top 20 aktualisiert den Modulvergleich.
 
 ## App starten
 

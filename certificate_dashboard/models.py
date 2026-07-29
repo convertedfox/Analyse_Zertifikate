@@ -13,13 +13,6 @@ class ModuleRecord:
 
 
 @dataclass(frozen=True)
-class CertificateVariant:
-    certificate_name: str
-    certificate_type: CertificateType
-    modules: tuple[ModuleRecord, ...]
-
-
-@dataclass(frozen=True)
 class CertificateEntry:
     certificate_name: str
     modules_by_type: dict[CertificateType, tuple[ModuleRecord, ...]]

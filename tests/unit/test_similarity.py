@@ -4,7 +4,6 @@ import pandas as pd
 
 from certificate_dashboard.models import CertificateEntry, ModuleRecord
 from certificate_dashboard.similarity import (
-    build_similarity_matrix,
     build_upper_triangle_pairs,
     compare_pair,
     jaccard_similarity,
@@ -28,17 +27,17 @@ def test_jaccard_similarity() -> None:
     assert jaccard_similarity(set(), set()) == 1.0
 
 
-def test_build_similarity_matrix_respects_type_filter() -> None:
+def test_build_upper_triangle_pairs_respects_type_filter() -> None:
     certificates = {
         "Alpha": build_entry("Alpha", ("M1", "M2"), ("M1", "M2", "M3")),
         "Beta": build_entry("Beta", ("M2",), ("M4",)),
     }
 
-    matrix_cas = build_similarity_matrix(["Alpha", "Beta"], certificates, "CAS")
-    assert matrix_cas.loc["Alpha", "Beta"] == 0.5
+    pairs_cas = build_upper_triangle_pairs(["Alpha", "Beta"], certificates, "CAS")
+    assert pairs_cas.iloc[0]["jaccard"] == 0.5
 
-    matrix_union = build_similarity_matrix(["Alpha", "Beta"], certificates, "CAS+DAS")
-    assert matrix_union.loc["Alpha", "Beta"] == 0.25
+    pairs_union = build_upper_triangle_pairs(["Alpha", "Beta"], certificates, "CAS+DAS")
+    assert pairs_union.iloc[0]["jaccard"] == 0.25
 
 
 def test_compare_pair_shared_and_exclusive_modules() -> None:

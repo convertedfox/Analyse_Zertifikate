@@ -1,4 +1,5 @@
 {
+  "schema_version": 1,
   "source": {
     "excel_path": "data/Analyse der Zertifikate.xlsx",
     "sheet_main": "Zertifikate und deren Module",

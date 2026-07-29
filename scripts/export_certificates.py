@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
@@ -35,6 +36,7 @@ class CertificatePayload(TypedDict):
 
 
 class DatasetPayload(TypedDict):
+    schema_version: int
     source: SourceInfo
     selected_certificate_names: list[str]
     certificates: list[CertificatePayload]
@@ -148,6 +150,7 @@ def build_dataset(excel_path: Path) -> DatasetPayload:
         )
 
     return {
+        "schema_version": 1,
         "source": {
             "excel_path": str(excel_path.as_posix()),
             "sheet_main": "Zertifikate und deren Module",
@@ -158,12 +161,20 @@ def build_dataset(excel_path: Path) -> DatasetPayload:
     }
 
 
+def serialize_json(payload: DatasetPayload) -> str:
+    return json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=False) + "\n"
+
+
 def write_json(payload: DatasetPayload, output_path: Path) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=False) + "\n",
-        encoding="utf-8",
-    )
+    output_path.write_text(serialize_json(payload), encoding="utf-8")
+
+
+def json_is_current(payload: DatasetPayload, output_path: Path) -> bool:
+    try:
+        return output_path.read_text(encoding="utf-8") == serialize_json(payload)
+    except OSError:
+        return False
 
 
 def main() -> None:
@@ -171,8 +182,16 @@ def main() -> None:
     payload = build_dataset(args.excel)
 
     if args.check:
+        if not json_is_current(payload, args.output):
+            print(
+                f"Generated JSON is missing or outdated: {args.output}. "
+                "Run the exporter without --check.",
+                file=sys.stderr,
+            )
+            raise SystemExit(1)
         print(
-            f"Validated {len(payload['selected_certificate_names'])} certificates from {args.excel}"
+            f"Validated {len(payload['selected_certificate_names'])} certificates; "
+            f"{args.output} is current"
         )
         return
 

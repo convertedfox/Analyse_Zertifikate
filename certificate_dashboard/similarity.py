@@ -18,27 +18,6 @@ def jaccard_similarity(module_ids_a: set[str], module_ids_b: set[str]) -> float:
     return len(module_ids_a & module_ids_b) / len(union)
 
 
-def build_similarity_matrix(
-    ordered_names: Iterable[str],
-    certificates: dict[str, CertificateEntry],
-    type_filter: TypeFilter,
-) -> pd.DataFrame:
-    names = list(ordered_names)
-    matrix = pd.DataFrame(0.0, index=names, columns=names)
-    module_sets = {
-        name: {module.module_id for module in merged_modules(certificates[name], type_filter)}
-        for name in names
-    }
-
-    for left_name in names:
-        for right_name in names:
-            matrix.loc[left_name, right_name] = jaccard_similarity(
-                module_sets[left_name], module_sets[right_name]
-            )
-
-    return matrix
-
-
 def build_upper_triangle_pairs(
     ordered_names: Iterable[str],
     certificates: dict[str, CertificateEntry],
@@ -98,17 +77,6 @@ def compare_pair(
         only_b_module_ids=only_b,
         jaccard=jaccard_similarity(modules_a, modules_b),
     )
-
-
-def to_long_dataframe(matrix: pd.DataFrame, threshold: float) -> pd.DataFrame:
-    frame = (
-        matrix.stack()
-        .rename("jaccard")
-        .reset_index()
-        .rename(columns={"level_0": "certificate_a", "level_1": "certificate_b"})
-    )
-    frame["visible_score"] = frame["jaccard"].where(frame["jaccard"] >= threshold)
-    return frame
 
 
 def top_pairs(
