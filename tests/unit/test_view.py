@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import pandas as pd
 
-from certificate_dashboard.view import add_axis_codes, focus_names, resolve_pair
+from certificate_dashboard.view import add_axis_codes, resolve_pair
 
 
 def pair_frame() -> pd.DataFrame:
@@ -24,11 +24,6 @@ def test_resolve_pair_keeps_available_selection() -> None:
 def test_resolve_pair_falls_back_after_filter_change() -> None:
     visible = [("A", "B", 0.8)]
     assert resolve_pair(visible, ("B", "C")) == ("A", "B")
-
-
-def test_focus_names_keeps_original_order() -> None:
-    names = ["A", "B", "C"]
-    assert focus_names(names, pair_frame(), "A", limit=2) == ["A", "B"]
 
 
 def test_add_axis_codes() -> None:

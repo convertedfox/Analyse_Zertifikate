@@ -38,7 +38,6 @@ dem Excel-Inhalt entspricht.
 
 - Typfilter steuert, ob CAS-, DAS- oder vereinigte Modulsets verglichen werden.
 - Mindestähnlichkeit blendet schwächere Paare aus der Top-Liste aus.
-- Ein Fokuszertifikat reduziert die Matrix auf dessen 19 ähnlichste Nachbarn.
 - Ein Klick in die Heatmap oder eine Auswahl aus den Top 20 aktualisiert den Modulvergleich.
 
 ## App starten

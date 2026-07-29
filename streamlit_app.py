@@ -22,7 +22,7 @@ from certificate_dashboard.similarity import (
     top_pairs,
 )
 from certificate_dashboard.ui_helpers import extract_pair_from_event
-from certificate_dashboard.view import add_axis_codes, focus_names, resolve_pair
+from certificate_dashboard.view import add_axis_codes, resolve_pair
 
 ROOT_DIR = Path(__file__).resolve().parent
 DATA_PATH = ROOT_DIR / "data" / "certificates.json"
@@ -178,19 +178,13 @@ def render_app() -> None:
         st.warning("Mit diesem Typfilter gibt es weniger als zwei analysierbare Zertifikate.")
         st.stop()
 
-    all_pair_frame = build_upper_triangle_pairs(active_names, certificates, selected_type_filter)
     with st.sidebar:
-        focus = st.selectbox(
-            "Fokuszertifikat",
-            options=["Alle Zertifikate", *active_names],
-            help="Zeigt im Fokusmodus das Zertifikat und seine 19 ähnlichsten Nachbarn.",
-        )
         st.caption(
             "Bei gleichnamigen Zertifikaten folgt das Modulset dem Typfilter: "
             "CAS, DAS oder Vereinigung."
         )
 
-    matrix_names = focus_names(active_names, all_pair_frame, focus)
+    matrix_names = active_names
     pair_frame = build_upper_triangle_pairs(matrix_names, certificates, selected_type_filter)
     pair_frame = add_axis_codes(pair_frame, matrix_names)
     visible_pairs = top_pairs(pair_frame, threshold, limit=len(pair_frame))
