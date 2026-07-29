@@ -39,6 +39,40 @@ def build_similarity_matrix(
     return matrix
 
 
+def build_upper_triangle_pairs(
+    ordered_names: Iterable[str],
+    certificates: dict[str, CertificateEntry],
+    type_filter: TypeFilter,
+) -> pd.DataFrame:
+    names = list(ordered_names)
+    module_sets = {
+        name: {module.module_id for module in merged_modules(certificates[name], type_filter)}
+        for name in names
+    }
+
+    rows: list[dict[str, object]] = []
+    for row_index, certificate_a in enumerate(names):
+        modules_a = module_sets[certificate_a]
+        for col_index, certificate_b in enumerate(names):
+            if col_index <= row_index:
+                continue
+
+            modules_b = module_sets[certificate_b]
+            shared_modules = modules_a & modules_b
+            rows.append(
+                {
+                    "certificate_a": certificate_a,
+                    "certificate_b": certificate_b,
+                    "row_index": row_index,
+                    "col_index": col_index,
+                    "jaccard": jaccard_similarity(modules_a, modules_b),
+                    "shared_module_count": len(shared_modules),
+                }
+            )
+
+    return pd.DataFrame(rows)
+
+
 def compare_pair(
     certificate_a: str,
     certificate_b: str,
@@ -75,3 +109,26 @@ def to_long_dataframe(matrix: pd.DataFrame, threshold: float) -> pd.DataFrame:
     )
     frame["visible_score"] = frame["jaccard"].where(frame["jaccard"] >= threshold)
     return frame
+
+
+def top_pairs(
+    pair_frame: pd.DataFrame,
+    threshold: float,
+    limit: int = 20,
+) -> list[tuple[str, str, float]]:
+    if pair_frame.empty:
+        return []
+
+    filtered = pair_frame[pair_frame["jaccard"] >= threshold]
+    if filtered.empty:
+        return []
+
+    ranked = filtered.sort_values(
+        by=["jaccard", "shared_module_count", "certificate_a", "certificate_b"],
+        ascending=[False, False, True, True],
+    ).head(limit)
+
+    return [
+        (row.certificate_a, row.certificate_b, float(row.jaccard))
+        for row in ranked.itertuples(index=False)
+    ]
